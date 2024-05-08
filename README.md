@@ -1,12 +1,16 @@
 # BookWorm App
 
-Our Web application “BookWorm” is a web app that provides educational resources, and materials for students of all levels, covering various courses and topics and a forum for discussion and interaction with each other.
+Our Web application “BookWorm”
+a user-centric educational platform designed to enhance the studying experience for learners mostly adult, It provides a comprehensive suite of features aimed at facilitating access to free ebooks, study materials, and collaborative study groups.
 
 # What our web app can do
 
 1. Choose courses and search for available books. <br>
-2. Use AI to summarize your book and know about the author. <br>
-3. delete or add to cart or make favourite. <br>
+2. Use AI to summarize your book <br>
+3. Download ebook for offline readiing <br>
+4. Highlight and take notes withinthe ebooks. <br>
+5. Generate quizzes atuomatically from their notes <br>
+6. Track Reading progess and achievements.
 
 # Usage
 
