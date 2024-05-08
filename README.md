@@ -4,21 +4,21 @@ Our Web application “BookWorm” is a web app that provides educational resour
 
 # What our web app can do
 
-'Choose courses and search for available books'
-'Use AI to summarize your book and know about the author'
-'delete or add to cart or make favourite'
+1. Choose courses and search for available books. <br>
+2. Use AI to summarize your book and know about the author. <br>
+3. delete or add to cart or make favourite. <br>
 
 # Usage
 
-'Run the command belwo to clone Repository into you local machine'
+_Run the command belwo to clone Repository into you local machine_
 
-'(https://github.com/learnable-2023/BOOKS-FE-11.git)'
+https://github.com/learnable-2023/BOOKS-FE-11.git
 
 # Tools Used#
 
-'HTML5'
-'CSS3'
-'Javascript'
-'React.js'
-'react-router-dom'
-'React Icon'
+HTML5 <br>
+CSS3 <br>
+Javascript <br>
+React.js
+react-router-dom' <br>
+React Icon'
