@@ -1,10 +1,12 @@
 import styled from 'styled-components';
 import { LuAlarmClock } from 'react-icons/lu';
 import { HiOutlinePencil } from 'react-icons/hi';
-// import { HiDotsVertical } from 'react-icons/hi';
+import { HiDotsVertical } from 'react-icons/hi';
 
 import profileImg from '../../Images/profile.png';
-// import book1 from '../../img/bio2.jpg';
+import book1 from '../../Images/book1.png';
+import book2 from '../../Images/book2.png';
+import book3 from '../../Images/book3.png';
 
 const SectionContainer = styled.div`
   flex-grow: 1;
@@ -94,7 +96,7 @@ const EduDataCon = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
   padding: 1rem 2rem 0 2rem;
-  gap: 1rem;
+  gap: 2rem;
   margin-right: 2rem;
 `;
 
@@ -140,25 +142,35 @@ const Heading = styled.div`
 const BtnCon = styled.div`
   margin-left: auto;
 `;
+
+const HighlightsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+`;
+
 const Highlights = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 3rem;
 `;
 
 const Details = styled.div`
+  max-width: 60rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
 `;
 
 const ImgBook = styled.img`
-  max-width: 10rem;
-  max-height: 10rem;
+  max-width: 8%;
+  height: 7rem;
 `;
 
 const BookDetail = styled.div`
-  max-width: 50rem;
+  max-width: 80%;
 `;
 
 function Main() {
@@ -248,19 +260,65 @@ function Main() {
               </Button>
             </BtnCon>
           </Heading>
-          <Highlights>
-            <Details>
-              <ImgBook src="" alt="book-cover" />
-              <BookDetail></BookDetail>
-            </Details>
-            <div>{/* <HiDotsVertical /> */}</div>
-          </Highlights>
+          <HighlightsContainer>
+            <Highlights>
+              <Details>
+                <ImgBook src={book1} alt="book-cover" />
+                <BookDetail>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Ipsum quo eos reiciendis nobis expedita natus aut quae ullam
+                  aliquam omnis ad, error, sed similique perferendis temporibus
+                  cumque dolore?
+                </BookDetail>
+              </Details>
+              <div>
+                <HiDotsVertical />
+              </div>
+            </Highlights>
+            <Highlights>
+              <Details>
+                <ImgBook src={book3} alt="book-cover" />
+                <BookDetail>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Ipsum quo eos reiciendis nobis expedita natus aut quae ullam
+                  aliquam omnis ad, error, sed similique perferendis temporibus
+                  cumque dolore?
+                </BookDetail>
+              </Details>
+              <div>
+                <HiDotsVertical />
+              </div>
+            </Highlights>
+            <Highlights>
+              <Details>
+                <ImgBook src={book2} alt="book-cover" />
+                <BookDetail>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Ipsum quo eos reiciendis nobis expedita natus aut quae ullam
+                  aliquam omnis ad, error, sed similique perferendis temporibus
+                  cumque dolore?
+                </BookDetail>
+              </Details>
+              <div>
+                <HiDotsVertical />
+              </div>
+            </Highlights>
+          </HighlightsContainer>
         </EduDataCon>
       </Section>
-      <Section>
+      {/* <Section>
+        <div>
+          <Heading>
+            <Title>currently reading</Title>
+            <BtnCon>
+              <Button farRight="true" variance="true">
+                view all
+              </Button>
+            </BtnCon>
+          </Heading>
+        </div>
         <div></div>
-        <div></div>
-      </Section>
+      </Section> */}
       <Section></Section>
     </SectionContainer>
   );
