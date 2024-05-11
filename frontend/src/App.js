@@ -1,14 +1,28 @@
- import'./App.css';
+import React from 'react'
+import './App.css';
+import Homepage from './Pages/Homepage';
  import LoginSignup from './Components/LoginSignup/LoginSignup';
+ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+ import Hero from './Components/Hero/Hero.js'
 
 
-
-function App() {
+ const router = createBrowserRouter([
+  {
+      path: '/',
+      element: <LoginSignup></LoginSignup>
+  },
+  {
+      path: '/home',
+      element: <Homepage></Homepage>
+  },
+]);
+export default function App() {
   return (
-    <div>
-        <LoginSignup/>
-    </div>
+      <main>
+          <RouterProvider router={router}></RouterProvider>
+      </main>
   );
 }
 
-export default App;
+
+
