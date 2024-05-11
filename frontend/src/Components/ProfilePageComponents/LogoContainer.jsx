@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import logo from '../../Images/bookWorm.PNG';
 
 const Container = styled.div`
   background: #f3f1f1;
@@ -12,7 +13,7 @@ const Container = styled.div`
 
 const Img = styled.img`
   width: 80%;
-  height: 2rem;
+  height: 4rem;
 
   /* padding: 0.7rem 1.4rem; */
 `;
@@ -20,7 +21,7 @@ const Img = styled.img`
 function LogoContainer() {
   return (
     <Container>
-      <Img src="logo.png" alt="logo" />
+      <Img src={logo} alt="logo" />
     </Container>
   );
 }
