@@ -1,28 +1,30 @@
-import React from 'react'
+import React from 'react';
 import './App.css';
 import Homepage from './Pages/Homepage';
- import LoginSignup from './Components/LoginSignup/LoginSignup';
- import { createBrowserRouter, RouterProvider } from 'react-router-dom'
- import Hero from './Components/Hero/Hero.js'
+import LoginSignup from './Components/LoginSignup/LoginSignup';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Hero from './Components/Hero/Hero.js';
+import ProfilePage from './Pages/ProfilePage';
+import GlobalStyle from './styles/GlobalStyles';
 
-
- const router = createBrowserRouter([
+const router = createBrowserRouter([
   {
-      path: '/',
-      element: <LoginSignup></LoginSignup>
+    path: '/',
+    element: <LoginSignup></LoginSignup>,
   },
   {
-      path: '/home',
-      element: <Homepage></Homepage>
+    path: '/home',
+    element: <Homepage></Homepage>,
   },
 ]);
 export default function App() {
   return (
+    <>
+      <GlobalStyle />
       <main>
-          <RouterProvider router={router}></RouterProvider>
+        <RouterProvider router={router}></RouterProvider>
       </main>
+      <ProfilePage />
+    </>
   );
 }
-
-
-
