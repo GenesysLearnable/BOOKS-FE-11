@@ -27,10 +27,10 @@ export default function App() {
   return (
     <>
       <GlobalStyle />
-      {/* <main>
+      <main>
         <RouterProvider router={router}></RouterProvider>
-      </main> */}
-      <Homepage />
+      </main>
+      {/* <Homepage /> */}
       {/* <ProfilePage /> */}
     </>
   );
