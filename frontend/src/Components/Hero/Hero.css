@@ -2,10 +2,12 @@
 * {
   padding: 0;
   margin: 0;
-
   /* I included border box property here */
   box-sizing: border-box;
   font-family: 'DM Sans', sans-serif;
+}
+.container {
+  display: flex;
 }
 
 /* I added this line to convert 1rem to 10px instead of its initial 16px 10px/16px = 0.625 */
@@ -66,27 +68,34 @@ html {
 .search {
   /* justify-content: space-between; */
   margin-right: 2rem;
-  border: 1px solid gray;
+  border: 0.1rem solid gray;
   border-radius: 5rem;
   width: 50rem;
-
-  /* I adjusted the height from 40px to 30px */
   height: 3rem;
   padding: 0.6rem 1.4rem;
   display: flex;
   align-items: center;
   border: 0.02rem solid white;
   background-color: rgba(229, 230, 233, 0.1);
-  /* border: 0.1rem solid red; */
 }
 
 .searchIcon {
   width: 1.4rem;
 }
 
-.search:focus {
-  background-color: white;
+.search:hover {
+  background-color: rgb(190, 190, 199);
 }
+
+.filter-search-icon {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+/* .search:focus {
+  background-color: white;
+} */
 
 .input-box {
   background: transparent;
@@ -115,6 +124,17 @@ html {
   font-size: 1.6rem;
 }
 
+/* .button {
+  background: transparent;
+  border: 1px solid white;
+  align-items: center;
+  width: 85px;
+  height: 42px;
+  border-radius: 4px;
+  color: white;
+  padding: 8px;
+} */
+
 .filter-btn {
   font-size: 1.4rem;
   padding: 0.2rem 0.6rem;
@@ -135,15 +155,14 @@ html {
 
 .filter-icon {
   font-size: 1rem;
-
   color: #fff;
 }
 
-button img {
+/* button img {
   width: 20px;
   height: 20px;
   color: white;
-}
+} */
 
 .continue-reading-row {
   display: flex;
@@ -274,6 +293,7 @@ p {
 }
 
 .category-filter {
+  margin-left: 10px;
   font-size: 16px;
   font-weight: 400;
   line-height: 25.6px;
@@ -339,6 +359,11 @@ p h2 {
 
 /* Community section */
 
+.Community-rwo {
+  display: flex;
+  gap: 24px;
+}
+
 .Community-books {
   display: flex;
   width: 564px;
@@ -359,9 +384,6 @@ p h2 {
 }
 
 .Community-books p {
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 15px;
   /* text-align: left; */
   color: #36373d;
   width: 280px;
@@ -369,9 +391,14 @@ p h2 {
 }
 
 /* making the sentences to take a particular space */
+
 .community-details {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+
   display: -webkit-box;
-  -webkit-line-clamp: 6;
+  -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -382,4 +409,73 @@ p h2 {
 .join-pics {
   display: flex;
   border: 1px solid green;
+
+  /* border: 1px solid red; */
+}
+
+.join-btn {
+  margin-top: 25px;
+  font-weight: 500;
+  list-style: 21.9px;
+  font-size: 18px;
+  width: 172px;
+  height: 46px;
+  border-radius: 4px;
+  padding: 12px 16px;
+  border: 1px solid rgba(0, 59, 0, 1);
+  color: rgba(0, 59, 0, 1);
+}
+
+.join-btn:hover {
+  background-color: white;
+}
+
+.join-pics {
+  margin: 10px;
+  display: inline-block;
+  /* border: 1px solid green; */
+  background-color: white;
+}
+
+.pics-btns {
+  display: flex;
+  background-color: white;
+  padding: 0;
+  margin: 0;
+}
+.pics-btn-image-number {
+  background-image: contain;
+}
+
+/* Library section */
+
+.library-row {
+  display: flex;
+  gap: 24px;
+}
+
+.community-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+}
+
+.sub-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+
+/* .arrow {
+  width: 4rem;
+  height: 4rem;
+  border: 0.1rem solid black;
+  border-radius: 10rem;
+} */
+
+.arrow-left,
+.arrow-right {
+  font-size: 4rem;
 }

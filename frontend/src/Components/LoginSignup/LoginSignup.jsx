@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './LoginSignup.css';
 import '../../App.css'
+import { Link } from 'react-router-dom';
 
 const LoginSignup = () => {
   const [action, setAction] = useState("Sign up");
@@ -71,10 +72,11 @@ const LoginSignup = () => {
           {errorMessage && <div className="errormessage">{errorMessage}</div>} 
           {action === "Login" && <div className="forgotpassword">Forgot Password?</div>}
 
-          <div className="submit-container" onClick={handleActionChange}>
-            <div className="submit">{action}</div>
+          <div className="submit-container">
+            <Link  to="/home" className="submit">{action}</Link>
           </div>
         {/* </div> */}
+        
       </div>
 
       <div className="t-and-c">

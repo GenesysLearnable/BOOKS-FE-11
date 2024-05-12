@@ -8,6 +8,7 @@ import Hero from './Components/Hero/Hero.js';
 
 import GlobalStyle from './styles/GlobalStyles';
 import Main from './Components/ProfilePageComponents/Main.jsx';
+import CommunitySlider from './Components/Hero/CommunitySlider.jsx';
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,7 @@ export default function App() {
         <RouterProvider router={router}></RouterProvider>
       </main>
       {/* <Homepage /> */}
+      {/* <CommunitySlider /> */}
       {/* <ProfilePage /> */}
     </>
   );
