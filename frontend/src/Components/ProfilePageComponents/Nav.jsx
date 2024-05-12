@@ -12,7 +12,6 @@ const SideNav = styled.aside`
   padding: 2rem 2.4rem;
   gap: 1.5rem;
   min-height: 100vh;
-  border-right: 0.05rem solid #ced4da;
 `;
 
 function Nav() {
