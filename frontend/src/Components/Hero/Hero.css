@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+*{
+  padding: 0;
+ margin: 0;
+ font-family: "DM Sans", sans-serif
+}
 .container {
   display: flex;
 }
@@ -14,10 +20,10 @@
       rgba(0, 0, 0, 0.7)
     ),
     url('../../Images/homepic.jpeg');
-  width: 100%;
+  width: 1000px;
   height: 65vh;
   background-size: cover;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   background-position: center center;
   display: flex;
   align-items: center;
@@ -26,15 +32,17 @@
 
 .search{ 
     /* justify-content: space-between; */
+    margin-right: 20px;
     border: 1px solid gray;
     border-radius: 50px;
     width: 564px;
-    height: 27px;
+    height: 40px;
     padding: 12px 16px;
     display: flex;
     align-items: center;
     border: 1px solid white;
     background-color: rgba(229, 230, 233, 0.4);
+    border: 1px solid red;
 
 
 }
@@ -75,4 +83,261 @@ button img {
   width: 20px;
   height: 20px;
   color: white;
+}
+
+.continue-reading-row{
+  display: flex;
+  gap: 24px;
+
+}
+
+.Wrapping{
+  display: flex;
+  /* border: 1px solid red; */
+  width: 368px;
+  height: 200px;
+  border: 1px solid rgba(229, 230, 233, 1);
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.08);
+  background-color:rgba(252, 252, 252, 0.93) ;
+  
+}
+
+.book-text{
+  width: 181px;
+  height: 142px;
+  padding: 0px 10px 0px 0px;
+  gap: 24px;
+  opacity: 0px;
+  margin-top: 10px;
+  
+}
+h3{
+font-family: EB Garamond;
+font-size: 32px;
+font-weight: 400;
+line-height: 38.4px;
+text-align: left;
+color:rgba(54, 55, 61, 1) ;
+margin-top: 20px;
+margin-bottom: 20px;
+
+}
+h5{
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  color: rgba(54, 55, 61, 1);
+}
+
+span{
+ color: rgba(92, 96, 102, 1); 
+}
+.long-name{
+  width: 160px; /* Set width as needed */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis
+}
+/* .continue{
+  width: 171px;
+height: 12px;
+gap: 0px;
+border-radius: 100px 0px 0px 0px;
+opacity: 0px;
+color: rgba(230, 240, 230, 1);
+
+} */
+
+.course{
+font-size: 20px;
+font-weight: 500;
+line-height: 32px;
+text-align: left;
+margin-bottom: 20px;
+margin-top: 10px;
+
+}
+
+.course-bk2{
+  font-size: 20px;
+font-weight: 500;
+line-height: 32px;
+text-align: left;
+margin-bottom: 20px;
+margin-top: 10px;
+width: 160px; /* Set width as needed */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis
+}
+
+.course-bk3{
+  font-size: 20px;
+font-weight: 500;
+line-height: 32px;
+text-align: left;
+margin-bottom: 20px;
+margin-top: 10px;
+width: 160px; /* Set width as needed */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis
+}
+
+.rate{
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  /* text-align: left; */
+
+}
+
+.rate-bk3{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  /* text-align: left; */
+
+}
+p{
+  padding-left: 5px;
+}
+
+
+.Reading-rate{
+position: relative;
+}
+
+.greendot{
+  position: absolute;
+  bottom: 3px;
+}
+
+/* category section */
+
+.category-row{
+  display: flex;
+  gap: 24px;
+
+}
+
+.category-filter{
+  font-size:16px ;
+  font-weight: 400;
+  line-height: 25.6px;
+  align-items: center;
+  padding: 8px;
+  width: 85px;
+  height: 42px;
+  border-radius: 4px;
+  border: 1px solid rgba(205, 206, 210, 1) ;
+  background-color: white;
+}
+
+.filter-icon{
+width: 20px;
+height: 20px;
+align-items: center;
+vertical-align:text-top;
+}
+
+/* category book list css */
+
+.category-books{
+  /* border: 1px solid red; */
+  align-items: center;
+  justify-content: center;
+  display: inline-block;
+ padding: 20px;
+ width: 270px;
+ height: 436px;
+ padding: 0;
+ margin: 0;
+   
+}
+
+
+.center-book{
+  justify-content: center;
+  display: flex;
+  background-color: rgba(242, 242, 244, 1);
+ padding: 50px;
+
+}
+p button{
+  font-size: 12px;
+  padding: 8px 12px;
+  background-color:rgba(242, 242, 244, 1) ;
+  border-radius: 33px;
+  border: none;
+  margin: 5px;
+}
+
+p h2 span{
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  color:rgba(92, 96, 102, 1) ;
+}
+
+p h2{
+  font-family: "DM Sans", sans-serif;
+font-size: 20px;
+font-weight: 400;
+line-height: 32px;
+text-align: left;
+
+}
+
+/* Community section */
+
+.Community-books{
+  display: flex;
+  width: 564px;
+  height: 338px;
+  border-radius: 4px;
+  border: 1px solid  rgba(229, 230, 233, 1);
+  box-shadow: 0px 0px 0px 1px rgba(252, 252, 252, 1);
+
+}
+
+.Community-books p h3{
+  font-family: EB Garamond;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 31.2px;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 0;
+  
+}
+
+.Community-books p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 15px;
+  /* text-align: left; */
+  color:#36373d ;
+  width: 280px;
+  /* height: 100px; */
+ 
+}
+
+/* making the sentences to take a particular space */
+.community-details{
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  border: 1px solid red;
+  
+}
+
+.join-pics{
+  display: flex;
+  border: 1px solid green;
+ 
 }
