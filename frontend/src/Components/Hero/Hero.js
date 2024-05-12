@@ -11,6 +11,10 @@ import greendot from '../../Images/Icons/greendot.png'
 import pic1 from '../../Images/Icons/pic1.png'
 import pic2 from '../../Images/Icons/pic2.png'
 import pic3 from '../../Images/Icons/pic3.png'
+import lib from '../../Images/lib.png'
+import lib2 from '../../Images/lib2.png'
+import lib3 from '../../Images/lib3.png'
+import lib4 from '../../Images/lib4.png'
 import reading from '../../Images/Icons/reading.png'
 
 
@@ -31,7 +35,7 @@ const Hero = () => {
 
            <div>
              <button className='filter-btn'>
-            <img src={filterbutton} alt='icon' />  Filter</button>
+              <img src={filterbutton} alt='icon' className='filter-search-icon' /> Filter</button>
            </div>
            
          
@@ -173,20 +177,78 @@ const Hero = () => {
              <p >
               <h3>Chem205 Student</h3><br/>
               <p className='community-details'>The CHEM 205 student group is a tight-knit community dedicated to supporting students enrolled in CHEM 205, an introductory course in organic chemistry. Our goal is to provide a supportive environment where students can come together to discuss course materials, share study resources, and collaborate on assignments. Through group discussions, study sessions, and social events, we aim to enhance understanding and mastery of organic chemistry concepts while fostering a sense of camaraderie among members.</p>
-              <button> Join</button> <br/>
+              <button className='join-btn'> Join</button> <br/>
               <div className='join-pics'>
               
-              <button>
-                <img style={{width: '40px', height: '40px', borderRadius: '20px'}} src={pic1} alt= 'pics' />
-                <img style={{width: '40px', height: '40px', borderRadius: '20px'}} src={pic2} alt= 'pics' />
-                <img style={{width: '40px', height: '40px', borderRadius: '20px'}} src={pic3} alt= 'pics' />
-                <img style={{width: '40px', height: '40px', borderRadius: '20px'}} src={reading} alt= 'pics' />
+              <button className='pics-btns'>
+                <img style={{width: '40px', height: '40px', borderRadius: '20px'}} src={pic1} alt= 'pics' className='pics-btn-image' />
+                <img style={{width: '40px', height: '40px', borderRadius: '20px'}} src={pic2} alt= 'pics' className='pics-btn-image'  />
+                <img style={{width: '40px', height: '40px', borderRadius: '20px'}} src={pic3} alt= 'pics'className='pics-btn-image'  />
+                <button className='pics-btn-image' style={{width: '40px', height: '40px', textAlign: 'center', justifyContent: 'center', display: 'flex', fontSize: '16px',}}>+100</button>
+               
                 </button>
               
               </div>
               
              </p>
             </div>
+
+            <div className='Community-books'>
+            <img style={{width: '270px', height: '338px'}} src={book1} alt='b00k1-pic' className='book-list' />
+             <p >
+              <h3>Chem205 Student</h3><br/>
+              <p className='community-details'>The CHEM 205 student group is a tight-knit community dedicated to supporting students enrolled in CHEM 205, an introductory course in organic chemistry. Our goal is to provide a supportive environment where students can come together to discuss course materials, share study resources, and collaborate on assignments. Through group discussions, study sessions, and social events, we aim to enhance understanding and mastery of organic chemistry concepts while fostering a sense of camaraderie among members.</p>
+              <button className='join-btn'> Join</button> <br/>
+              <div className='join-pics'>
+              
+              <button className='pics-btns'>
+                <img style={{width: '40px', height: '40px', borderRadius: '20px'}} src={pic1} alt= 'pics' className='pics-btn-image' />
+                <img style={{width: '40px', height: '40px', borderRadius: '20px'}} src={pic2} alt= 'pics' className='pics-btn-image'  />
+                <img style={{width: '40px', height: '40px', borderRadius: '20px'}} src={pic3} alt= 'pics'className='pics-btn-image'  />
+                <button className='pics-btn-image' style={{width: '40px', height: '40px', textAlign: 'center', justifyContent: 'center', display: 'flex', fontSize: '16px',}}>+100</button>
+               
+                </button>
+              
+              </div>
+              
+             </p>
+            </div>
+
+            <div className='Community-books'>
+            <img style={{width: '270px', height: '338px'}} src={book1} alt='b00k1-pic' className='book-list' />
+             <p >
+              <h3>Chem205 Student</h3><br/>
+              <p className='community-details'>The CHEM 205 student group is a tight-knit community dedicated to supporting students enrolled in CHEM 205, an introductory course in organic chemistry. Our goal is to provide a supportive environment where students can come together to discuss course materials, share study resources, and collaborate on assignments. Through group discussions, study sessions, and social events, we aim to enhance understanding and mastery of organic chemistry concepts while fostering a sense of camaraderie among members.</p>
+              <button className='join-btn'> Join</button> <br/>
+              <div className='join-pics'>
+              
+              <button className='pics-btns'>
+                <img style={{width: '40px', height: '40px', borderRadius: '20px'}} src={pic1} alt= 'pics' className='pics-btn-image' />
+                <img style={{width: '40px', height: '40px', borderRadius: '20px'}} src={pic2} alt= 'pics' className='pics-btn-image'  />
+                <img style={{width: '40px', height: '40px', borderRadius: '20px'}} src={pic3} alt= 'pics'className='pics-btn-image'  />
+                <button className='pics-btn-image' style={{width: '40px', height: '40px', textAlign: 'center', justifyContent: 'center', display: 'flex', fontSize: '16px',}}>+100</button>
+               
+                </button>
+              
+              </div>
+              
+             </p>
+            </div>
+
+
+
+          </div>
+
+          
+          <h3>Library<button className='category-filter'>
+          <img src={filterbutton} alt='icon'className='filter-icon' /> Filter</button></h3>
+
+          <div className='library-row'>
+          <img style={{width: '270px', height: '280px', boarderRaduis: '6px', boxShadow: '1px solid rgba(229, 230, 233, 1) '}} src={lib} alt='b00k1-pic'  />
+          <img style={{width: '270px', height: '280px', boarderRaduis: '6px',boxShadow: '1px solid rgba(229, 230, 233, 1) '}} src={lib2} alt='b00k1-pic'  />
+          <img style={{width: '270px', height: '280px', boarderRaduis: '6px', boxShadow: '1px solid rgba(229, 230, 233, 1) '}} src={lib3} alt='b00k1-pic'  />
+          <img style={{width: '270px', height: '280px', boarderRaduis: '6px',boxShadow: '1px solid rgba(229, 230, 233, 1) '}} src={lib4} alt='b00k1-pic'  />
+
           </div>
  </div>
     
