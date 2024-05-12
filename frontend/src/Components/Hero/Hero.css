@@ -10,20 +10,9 @@
   display: flex;
 }
 
-/* I added this line to convert 1rem to 10px instead of its initial 16px 10px/16px = 0.625 */
 html {
   font-size: 62.5%;
 }
-
-/* I commented this class out, you can actually make use of .hero-container and achieve the same aim */
-/* .container {
-  display: flex;
-} */
-
-/* .hero-container {
-  flex-basis: 80%;
-  width: 100%;
-} */
 
 .hero-container {
   flex-grow: 1;
@@ -459,6 +448,7 @@ p h2 {
   justify-content: space-between;
   align-items: center;
   padding: 0 3rem;
+  width: 50%;
 }
 
 .sub-title {

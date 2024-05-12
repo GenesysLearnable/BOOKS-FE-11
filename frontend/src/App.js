@@ -4,11 +4,9 @@ import Homepage from './Pages/Homepage';
 import LoginSignup from './Components/LoginSignup/LoginSignup';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Hero from './Components/Hero/Hero.js';
-// import ProfilePage from './Pages/ProfilePage';
 
 import GlobalStyle from './styles/GlobalStyles';
 import Main from './Components/ProfilePageComponents/Main.jsx';
-import CommunitySlider from './Components/Hero/CommunitySlider.jsx';
 
 const router = createBrowserRouter([
   {
@@ -31,9 +29,8 @@ export default function App() {
       <main>
         <RouterProvider router={router}></RouterProvider>
       </main>
+
       {/* <Homepage /> */}
-      {/* <CommunitySlider /> */}
-      {/* <ProfilePage /> */}
     </>
   );
 }
