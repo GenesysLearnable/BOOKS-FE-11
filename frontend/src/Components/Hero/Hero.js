@@ -28,7 +28,7 @@ const Hero = () => {
 
            <input className='input-box' placeholder='Author, book, topic...' type='text'/>
            </div>
-           
+
            <div>
              <button className='filter-btn'>
             <img src={filterbutton} alt='icon' />  Filter</button>
@@ -173,8 +173,9 @@ const Hero = () => {
              <p >
               <h3>Chem205 Student</h3><br/>
               <p className='community-details'>The CHEM 205 student group is a tight-knit community dedicated to supporting students enrolled in CHEM 205, an introductory course in organic chemistry. Our goal is to provide a supportive environment where students can come together to discuss course materials, share study resources, and collaborate on assignments. Through group discussions, study sessions, and social events, we aim to enhance understanding and mastery of organic chemistry concepts while fostering a sense of camaraderie among members.</p>
-              <div className='join-pics'>
               <button> Join</button> <br/>
+              <div className='join-pics'>
+              
               <button>
                 <img style={{width: '40px', height: '40px', borderRadius: '20px'}} src={pic1} alt= 'pics' />
                 <img style={{width: '40px', height: '40px', borderRadius: '20px'}} src={pic2} alt= 'pics' />
