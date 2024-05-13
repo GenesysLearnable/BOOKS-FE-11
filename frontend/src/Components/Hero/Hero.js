@@ -2,24 +2,24 @@ import React from 'react';
 import { HiOutlineBell } from 'react-icons/hi';
 import './Hero.css';
 // import Sidebar from '../Sidebar/sidebar.js'
-
-import book1 from '../../Images/book1.png';
-import book2 from '../../Images/book2.png';
-import book3 from '../../Images/book3.png';
-import searchIcon from '../../Images/Icons/search-icon.svg';
+import book1 from '../../Images/book1.png'
+import book2 from '../../Images/book2.png'
+import book3 from '../../Images/book3.png'
 import { HiOutlineFilter } from 'react-icons/hi';
-import filterbutton from '../../Images/Icons/filter-button.svg';
-import Rectangle from '../../Images/Icons/Rectangle.png';
-import greendot from '../../Images/Icons/greendot.png';
-import pic1 from '../../Images/Icons/pic1.png';
-import pic2 from '../../Images/Icons/pic2.png';
-import pic3 from '../../Images/Icons/pic3.png';
-// import reading from '../../Images/Icons/reading.png';
+import searchIcon from '../../Images/Icons/search-icon.svg';
+import searchicon from '../../Images/Icons/search-icon.svg'
+import filterbutton from '../../Images/Icons/filter-button.svg'
+import Rectangle from '../../Images/Icons/Rectangle.png'
+import greendot from '../../Images/Icons/greendot.png'
+import pic1 from '../../Images/Icons/pic1.png'
+import pic2 from '../../Images/Icons/pic2.png'
+import pic3 from '../../Images/Icons/pic3.png'
+import lib from '../../Images/lib.png'
+import lib2 from '../../Images/lib2.png'
+import lib3 from '../../Images/lib3.png'
+import lib4 from '../../Images/lib4.png'
 
-import lib from '../../Images/lib.png';
-import lib2 from '../../Images/lib2.png';
-import lib3 from '../../Images/lib3.png';
-import lib4 from '../../Images/lib4.png';
+
 
 const Hero = () => {
   return (
