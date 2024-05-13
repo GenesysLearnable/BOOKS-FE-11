@@ -15,8 +15,7 @@ import lib from '../../Images/lib.png'
 import lib2 from '../../Images/lib2.png'
 import lib3 from '../../Images/lib3.png'
 import lib4 from '../../Images/lib4.png'
-import reading from '../../Images/Icons/reading.png'
-
+// import reading from '../../Images/Icons/reading.png'
 
 
 const Hero = () => {
