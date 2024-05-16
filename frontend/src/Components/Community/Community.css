@@ -1,0 +1,98 @@
+
+.Community-rwo {
+    display: flex;
+    gap: 24px;
+  }
+  
+  .Community-books {
+    display: flex;
+    width: 558px;
+    height: 330px;
+    border-radius: 4px;
+    border: 1px solid rgba(229, 230, 233, 1);
+    box-shadow: 0px 0px 0px 1px rgba(252, 252, 252, 1);
+  }
+
+  .Community-books:hover{
+    transform: scale(1.1);
+    transition: all .5s;
+  }
+  
+  .Community-books p h3 {
+    font-family: EB Garamond;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 31.2px;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+  
+  .Community-books p {
+    /* text-align: left; */
+    color: #36373d;
+    width: 280px;
+    /* height: 100px; */
+  }
+  
+  /* making the sentences to take a particular space */
+  
+  .community-details {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+  
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  
+    /* border: 1px solid red; */
+  }
+  
+  .join-pics {
+    display: flex;
+    /* border: 1px solid green; */
+  
+    /* border: 1px solid red; */
+  }
+  
+  .join-btn {
+    margin-top: 25px;
+    font-weight: 500;
+    list-style: 21.9px;
+    font-size: 18px;
+    width: 172px;
+    height: 46px;
+    border-radius: 4px;
+    padding: 12px 16px;
+    border: 1px solid rgba(0, 59, 0, 1);
+    color: rgba(0, 59, 0, 1);
+  
+  }
+  
+  .join-btn:hover {
+    background-color: white;
+  }
+  
+  .join-pics {
+    margin: 10px;
+    display: inline-block;
+    /* border: 1px solid green; */
+    background-color: white;
+  }
+  
+  .pics-btns {
+    display: flex;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    border: none;
+    
+  }
+  .pics-btn-image-number {
+    background-image: contain;
+  
+    
+  }
