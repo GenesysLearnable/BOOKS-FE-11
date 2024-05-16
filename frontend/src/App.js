@@ -7,6 +7,7 @@ import Hero from './Components/Hero/Hero.js';
 
 import GlobalStyle from './styles/GlobalStyles';
 import Main from './Components/ProfilePageComponents/Main.jsx';
+import Searchpage from './Pages/Searchpage.js';
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
   {
     path: '/profile',
     element: <Main></Main>,
+  },
+  {
+    path: '/search',
+    element: <Searchpage></Searchpage>,
   },
 ]);
 export default function App() {
