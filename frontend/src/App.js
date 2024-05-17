@@ -1,17 +1,20 @@
 import React from 'react';
-import Homepage from './Pages/Homepage';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import GlobalStyle from './styles/GlobalStyles';
-import ProfilePage from './Pages/ProfilePage.jsx';
-import SignUpPage from './Pages/SignUpPage.jsx';
-import LoginPage from './Pages/LoginPage.jsx';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import { Toaster } from 'react-hot-toast';
 
+import GlobalStyle from './styles/GlobalStyles';
+import Homepage from './Pages/Homepage';
+import ProfilePage from './Pages/ProfilePage.jsx';
+import SignUpPage from './Pages/SignUpPage.jsx';
+import LoginPage from './Pages/LoginPage.jsx';
+import Searchpage from './Pages/Searchpage.js';
+
 const queryClient = new QueryClient({
   defaultOptions: { queries: { staleTime: 60 * 1000 } },
 });
+
 export default function App() {
   return (
     <QueryClientProvider client={queryClient}>
@@ -22,6 +25,7 @@ export default function App() {
           <Route path="/home" element={<Homepage />} />
           <Route path="/Signup" element={<SignUpPage />} />
           <Route path="/profile" element={<ProfilePage />} />
+          <Route path="/search" element={<Searchpage />} />
         </Routes>
       </Router>
       <ReactQueryDevtools initialIsOpen={false} />
