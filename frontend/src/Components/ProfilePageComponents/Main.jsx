@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Section1 from './Section1';
 import Section2 from './Section2';
 import Section3 from './Section3';
+import Section4 from './Section04';
 
 const SectionContainer = styled.div`
   flex-grow: 1;
@@ -33,7 +34,9 @@ function Main() {
       <Section>
         <Section3 />
       </Section>
-      <Section></Section>
+      <Section>
+        <Section4 />
+      </Section>
     </SectionContainer>
   );
 }
