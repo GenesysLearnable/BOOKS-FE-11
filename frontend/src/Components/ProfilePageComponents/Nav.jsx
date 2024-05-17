@@ -10,7 +10,7 @@ const SideNav = styled.aside`
   flex-basis: 18%;
   font-size: 1.4rem;
   padding: 2rem 2.4rem;
-  gap: 1.5rem;
+  gap: 2rem;
   min-height: 100vh;
 `;
 

@@ -1,9 +1,7 @@
-import React from 'react'
+import React from 'react';
 import Nav from '../Components/ProfilePageComponents/Nav.jsx';
 import styled from 'styled-components';
 import SearchResult from '../Components/SearchResult/SearchResult.js';
-
-
 
 const Container = styled.div`
   max-width: 150rem;
@@ -16,16 +14,11 @@ const Container = styled.div`
 
 function Searchpage() {
   return (
-    <div>
-
-        
-      <Container>
+    <Container>
       <Nav />
-    <SearchResult/>
-    {/* <Category/> */}
+      <SearchResult />
     </Container>
-    </div>
-  )
+  );
 }
 
-export default Searchpage
+export default Searchpage;

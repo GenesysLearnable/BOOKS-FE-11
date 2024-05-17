@@ -47,7 +47,7 @@ const EduDataCon = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 1rem 2rem 0 2rem;
+  padding: 1rem 2rem 2rem 2rem;
   gap: 2rem;
   margin-right: 2rem;
 `;
@@ -99,11 +99,24 @@ const ImgBook = styled.img`
 `;
 
 const BookDetail = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
   max-width: 80%;
 `;
 
 const BtnCon = styled.div`
   margin-left: auto;
+`;
+
+const Date = styled.p`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1rem;
 `;
 
 function Section2() {
@@ -142,10 +155,16 @@ function Section2() {
             <Details>
               <ImgBook src={book1} alt="book-cover" />
               <BookDetail>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum
-                quo eos reiciendis nobis expedita natus aut quae ullam aliquam
-                omnis ad, error, sed similique perferendis temporibus cumque
-                dolore?
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Ipsum quo eos reiciendis nobis expedita natus aut quae ullam
+                  aliquam omnis ad, error, sed similique perferendis temporibus
+                  cumque dolore?
+                </p>
+                <Date>
+                  <span>12/10/2020</span>
+                  <span>09:06am</span>
+                </Date>
               </BookDetail>
             </Details>
             <div>
@@ -156,10 +175,16 @@ function Section2() {
             <Details>
               <ImgBook src={book3} alt="book-cover" />
               <BookDetail>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum
-                quo eos reiciendis nobis expedita natus aut quae ullam aliquam
-                omnis ad, error, sed similique perferendis temporibus cumque
-                dolore?
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Ipsum quo eos reiciendis nobis expedita natus aut quae ullam
+                  aliquam omnis ad, error, sed similique perferendis temporibus
+                  cumque dolore?
+                </p>
+                <Date>
+                  <span>12/10/2020</span>
+                  <span>09:06am</span>
+                </Date>
               </BookDetail>
             </Details>
             <div>
@@ -170,10 +195,16 @@ function Section2() {
             <Details>
               <ImgBook src={book2} alt="book-cover" />
               <BookDetail>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum
-                quo eos reiciendis nobis expedita natus aut quae ullam aliquam
-                omnis ad, error, sed similique perferendis temporibus cumque
-                dolore?
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Ipsum quo eos reiciendis nobis expedita natus aut quae ullam
+                  aliquam omnis ad, error, sed similique perferendis temporibus
+                  cumque dolore?
+                </p>
+                <Date>
+                  <span>12/10/2020</span>
+                  <span>09:06am</span>
+                </Date>
               </BookDetail>
             </Details>
             <div>
