@@ -72,9 +72,9 @@ html {
   width: 1.4rem;
 }
 
-.search:hover {
+/* .search:hover {
   background-color: rgb(190, 190, 199);
-}
+} */
 
 .filter-search-icon {
   margin-right: 10px;
@@ -175,6 +175,7 @@ html {
   gap: 24px;
   opacity: 0px;
   margin-top: 10px;
+  font-size: 1rem;
 }
 h3 {
   font-family: EB Garamond;

@@ -5,8 +5,10 @@ import currentReading2 from '../../Images/book2.png';
 import currentReading3 from '../../Images/book1.png';
 import currentReading4 from '../../Images/book3.png';
 
+import { HiDotsVertical } from 'react-icons/hi';
+
 const BioDataCon = styled.div`
-  flex-basis: 50rem;
+  flex-basis: 50%;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -54,11 +56,21 @@ const BookInfo = styled.div`
 const BooksDetails = styled.div`
   width: 100%;
   display: flex;
-  justify-content: flex-startn;
+  justify-content: flex-start;
   align-items: center;
   gap: 2rem;
 `;
-
+const EduDataCon = styled.div`
+  box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.3);
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 1rem 2rem 0 2rem;
+  gap: 2rem;
+  margin-right: 2rem;
+`;
 const ImgBook = styled.img`
   max-width: 8%;
   height: 6rem;
@@ -87,6 +99,37 @@ const PageLeft = styled.div`
   /* justify-content: flex-start; */
   align-items: center;
   gap: 5rem;
+`;
+const HighlightsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+`;
+
+const Highlights = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3rem;
+  padding-right: 3rem;
+`;
+
+const BookDetail = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  max-width: 90%;
+`;
+
+const Date = styled.p`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  color: #7c7979;
+  font-size: 1rem;
 `;
 
 function Section3() {
@@ -173,7 +216,72 @@ function Section3() {
           </BooksDetails>
         </BookInfo>
       </BioDataCon>
-      <div></div>
+      <EduDataCon>
+        <Heading>
+          <Title>Highlights</Title>
+          <BtnCon>
+            <Button farRight="true" variance="true">
+              View all Highlights
+            </Button>
+          </BtnCon>
+        </Heading>
+        <HighlightsContainer>
+          <Highlights>
+            <BookDetail>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum
+                quo eos reiciendis nobis expedita natus aut quae ullam aliquam
+                omnis ad, error, sed similique perferendis temporibus cumque
+                dolore?
+              </p>
+              <Date>
+                <span>12/10/2020</span>
+                <span>09:06am</span>
+              </Date>
+            </BookDetail>
+
+            <div>
+              <HiDotsVertical />
+            </div>
+          </Highlights>
+          <Highlights>
+            <BookDetail>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum
+                quo eos reiciendis nobis expedita natus aut quae ullam aliquam
+                omnis ad, error, sed similique perferendis temporibus cumque
+                dolore?
+              </p>
+              <Date>
+                <span>12/10/2020</span>
+                <span>09:06am</span>
+              </Date>
+            </BookDetail>
+
+            <div>
+              <HiDotsVertical />
+            </div>
+          </Highlights>
+          <Highlights>
+            <BookDetail>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum
+                quo eos reiciendis nobis expedita natus aut quae ullam aliquam
+                omnis ad, error, sed similique perferendis temporibus cumque
+                dolore?
+              </p>
+              <Date>
+                <span>12/10/2020</span>
+                <span>09:06am</span>
+              </Date>
+            </BookDetail>
+
+            <div>
+              <HiDotsVertical />
+            </div>
+          </Highlights>
+        </HighlightsContainer>
+      </EduDataCon>
     </>
   );
 }
