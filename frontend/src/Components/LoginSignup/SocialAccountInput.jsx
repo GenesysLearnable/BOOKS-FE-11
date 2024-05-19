@@ -21,7 +21,7 @@ const Account = styled.div`
   justify-content: center;
   gap: 1.5rem;
   width: 40rem;
-  height: 4rem;
+  height: 3.5rem;
   background-color: white;
   border-radius: 5rem;
   border: 0.1rem solid gray;

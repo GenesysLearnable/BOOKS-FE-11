@@ -1,5 +1,10 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React, { useState } from 'react';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import { Toaster } from 'react-hot-toast';
@@ -10,22 +15,38 @@ import ProfilePage from './Pages/ProfilePage.jsx';
 import SignUpPage from './Pages/SignUpPage.jsx';
 import LoginPage from './Pages/LoginPage.jsx';
 import Searchpage from './Pages/Searchpage.js';
+import ForgotPasswordPage from './Pages/ForgotPasswordPage.jsx';
+import ResetPassword from './Pages/ResetPassword.jsx';
+import NewPasswordPage from './Pages/NewPasswordPage.jsx';
+import PageNotFound from './Pages/PageNotFound.jsx';
 
 const queryClient = new QueryClient({
   defaultOptions: { queries: { staleTime: 60 * 1000 } },
 });
 
 export default function App() {
+  const [email, setEmail] = useState('');
   return (
     <QueryClientProvider client={queryClient}>
       <GlobalStyle />
       <Router>
         <Routes>
-          <Route path="/" element={<LoginPage />} />
-          <Route path="/home" element={<Homepage />} />
-          <Route path="/Signup" element={<SignUpPage />} />
-          <Route path="/profile" element={<ProfilePage />} />
-          <Route path="/search" element={<Searchpage />} />
+          <Route index element={<Navigate replace to="login" />} />
+          <Route path="login" element={<LoginPage />} />
+          <Route path="home" element={<Homepage />} />
+          <Route path="signup" element={<SignUpPage />} />
+          <Route path="profile" element={<ProfilePage />} />
+          <Route path="search" element={<Searchpage />} />
+          <Route
+            path="forgotPassword"
+            element={<ForgotPasswordPage setEmail={setEmail} email={email} />}
+          />
+          <Route
+            path="resetPassword"
+            element={<ResetPassword email={email} />}
+          />
+          <Route path="resetPassword/:id" element={<NewPasswordPage />} />
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
       </Router>
       <ReactQueryDevtools initialIsOpen={false} />

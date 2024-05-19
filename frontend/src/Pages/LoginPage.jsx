@@ -28,7 +28,7 @@ const Header = styled.div`
 
 const H1 = styled.h1`
   color: rgba(21, 21, 21, 1);
-  font-size: 3rem;
+  font-size: 2.4rem;
   font-weight: 700;
 `;
 
@@ -75,7 +75,7 @@ function LoginPage() {
         <User>
           <span>Don't have an account yet? </span>
 
-          <Links onClick={() => navigate('/home')}>Sign up</Links>
+          <Links onClick={() => navigate('/signup')}>Sign up</Links>
         </User>
       </InputSection>
     </Container>
