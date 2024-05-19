@@ -46,7 +46,7 @@ const DataContainer = styled.div`
   position: relative;
   margin: auto;
   width: 40rem;
-  height: 4rem;
+  height: 3.5rem;
   background-color: white;
   border: 0.1rem solid gray;
   border-radius: 0.5rem;
@@ -103,6 +103,7 @@ const ForgotPassword = styled.div`
   justify-content: flex-start;
   align-items: center;
   margin-top: 1.5rem;
+  cursor: pointer;
 `;
 
 async function fetchLoginData(formData) {
@@ -178,7 +179,9 @@ function CreateInputLogin() {
             </span>
           </DataContainer>
         </Accounts>
-        <ForgotPassword>Forgot Password?</ForgotPassword>
+        <ForgotPassword onClick={() => navigate('/forgotPassword')}>
+          Forgot Password?
+        </ForgotPassword>
       </div>
 
       <Action>
