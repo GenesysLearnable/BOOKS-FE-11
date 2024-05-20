@@ -1,0 +1,22 @@
+.bingo {
+  border: 1px solid rgb(233, 61, 61);
+}
+.Continue-reading-container {
+  background-color: greenyellow;
+  margin-top: 3rem;
+  gap: 20px;
+  display: inline-block;
+  vertical-align: top;
+  border: 1px solid black;
+}
+
+.Continue-reading-sub {
+  display: flex;
+  /* border: 1px solid red; */
+
+  /* width: 300px; */
+}
+
+/* .Continue-reading-container > div {
+  flex-grow: 1;
+} */
