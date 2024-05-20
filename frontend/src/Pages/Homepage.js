@@ -9,36 +9,34 @@ import Category from "../Components/Category/Category.js";
 import "../Components/Hero/Hero.css";
 
 const Container = styled.div`
-  max-width: 150rem;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  /* gap: 1rem; */
   color: #495057;
 `;
 
 const Homepage = () => {
   return (
-    <Container>
-      <Nav />
-      <div>
-        <Hero />
+    <>
+      <Container>
+        <Nav />
+        <div style={{ flexGrow: "0", flexShrink: "0", width: "85vw" }}>
+          <Hero />
 
-        <div className="Choose-courses">
-          <button className="My-courses-All">All</button>
-          <button className="My-courses">Engineering</button>
-          <button className="My-courses">Medicals</button>
-          <button className="My-courses">Computer science</button>
-          <button className="My-courses">Nurse</button>
-        </div>
-        <ContinueReading />
-        <div className="Book-details">
+          <div className="Choose-courses">
+            <button className="My-courses-All">All</button>
+            <button className="My-courses">Engineering</button>
+            <button className="My-courses">Medicals</button>
+            <button className="My-courses">Computer science</button>
+            <button className="My-courses">Nurse</button>
+          </div>
+          <ContinueReading />
           <Category />
           <Community />
           <Library />
         </div>
-      </div>
-    </Container>
+      </Container>
+    </>
   );
 };
 

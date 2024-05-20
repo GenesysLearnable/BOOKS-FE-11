@@ -13,8 +13,11 @@ import ReadingCards from "../ContinueReadingCard/ReadingCards";
 function ContinueReading() {
   return (
     <div>
-      <h3>Continue Reading</h3>
+      <h3>Continue Reading.....</h3>
       <div className="continue-reading-row">
+        <ReadingCards />
+        <ReadingCards />
+        <ReadingCards />
         <ReadingCards />
         <ReadingCards />
         <ReadingCards />

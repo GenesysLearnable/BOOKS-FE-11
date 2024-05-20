@@ -1,6 +1,8 @@
 import React from "react";
 import "./ReadingCards.css";
 import book2 from "../../Images/book2.png";
+import Rectangle from "../../Images/Icons/Rectangle.png";
+import greendot from "../../Images/Icons/greendot.png";
 
 function ReadingCards() {
   return (
@@ -23,6 +25,29 @@ function ReadingCards() {
               Page 205<span> of 1,340</span>&nbsp; 20%
             </p>
           </p>
+
+          <div className="Reading-rate">
+            <img
+              style={{
+                width: "171",
+                height: "12px",
+                boarderRaduis: "12px",
+              }}
+              src={Rectangle}
+              alt="continue reading"
+              className="continue"
+            />
+            <img
+              style={{
+                width: "11",
+                height: "12px",
+                boarderRaduis: "12px",
+              }}
+              src={greendot}
+              alt="continue reading"
+              className="greendot"
+            />
+          </div>
         </div>
       </div>
     </div>

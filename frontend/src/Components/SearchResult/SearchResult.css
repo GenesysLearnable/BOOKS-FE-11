@@ -1,21 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
+
 * {
   padding: 0;
   margin: 0;
   /* I included border box property here */
   box-sizing: border-box;
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
+
 .container {
   display: flex;
-  
 }
 
 html {
   font-size: 62.5%;
 }
-
-
 
 .hero-container {
   flex-grow: 1;
@@ -31,7 +30,7 @@ html {
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.7)
     ),
-    url('../../Images/homepic.jpeg');
+    url("../../Images/homepic.jpeg");
 
   /* I changed width to 100% instead of initial fixed width of  width: 1000px; */
   width: 100%;
@@ -39,9 +38,9 @@ html {
   background-size: cover;
   /* background-repeat: no-repeat; */
   background-position: center center;
-  padding-right: 2rem;
+  /* padding-right: 2rem; */
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
 }
 
@@ -51,6 +50,7 @@ html {
   align-items: center;
   gap: 10rem;
 }
+
 .search-container {
   display: flex;
   align-items: center;
@@ -81,7 +81,6 @@ html {
   transform: scale(1.1);
   transition: all .2s; */
   /* background-color: rgb(190, 190, 199); */
-
 }
 
 .filter-search-icon {
@@ -89,7 +88,6 @@ html {
   width: 30px;
   height: 30px;
 }
-
 
 .input-box {
   background: transparent;
@@ -99,7 +97,6 @@ html {
   caret-color: white;
   color: azure;
   font-size: 1.5rem;
-  
 }
 
 .input-box::placeholder {
@@ -122,8 +119,6 @@ html {
   color: #fff;
   font-size: 1.6rem;
 }
-
-
 
 .filter-btn {
   height: 3.7rem;
@@ -149,23 +144,14 @@ html {
   color: #fff;
 }
 
-.Choose-courses{
+.Choose-courses {
   display: flex;
- align-items: center;
-  /* border: 1px solid red; */
- margin-top: 3rem;
- margin-left: 25%;
-  /* width: 68rem; */
-  height: 4.8rem;
-  gap: 2rem;
-  /* top: 41rem;
-  left: 23rem ;
-  gap: 1.6rem; */
-
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
 }
 
-
-.My-courses-All{
+.My-courses-All {
   width: 5.6rem;
   height: 4.8rem;
   border-radius: 0.4rem;
@@ -178,108 +164,108 @@ html {
   color: rgba(255, 255, 255, 1);
   border: none;
 }
-.My-courses{
 
-height: 4.8rem;
-border-radius: 0.4rem;
-padding: 0.8rem 1.6rem;
-gap: 1rem;
-font-size: 2rem;
-line-height: 3.2rem;
-font-weight: 500;
-color: rgba(88, 95, 106, 1);
-background-color: white;
-border: none;
-
+.My-courses {
+  height: 4.8rem;
+  border-radius: 0.4rem;
+  padding: 0.8rem 1.6rem;
+  gap: 1rem;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  font-weight: 500;
+  color: rgba(88, 95, 106, 1);
+  background-color: white;
+  border: none;
 }
 
-.My-courses:hover{
-  background-color:rgb(223, 224, 224) ;
+.My-courses:hover {
+  background-color: rgb(223, 224, 224);
 }
 
-.My-courses:active{
+.My-courses:active {
   background-color: rgba(21, 21, 21, 1);
   color: white;
 }
 
 .category-row {
-    display: flex;
-    gap: 24px;
-  }
-  
-  .category-filter {
-    margin-left: 10px;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 25.6px;
-    align-items: center;
-    padding: 8px;
-    width: 85px;
-    height: 42px;
-    border-radius: 4px;
-    border: 1px solid rgba(205, 206, 210, 1);
-    background-color: white;
-  }
+  display: flex;
+  gap: 24px;
+}
 
-  
-  
-  .filter-icon {
-    width: 20px;
-    height: 20px;
-    align-items: center;
-    vertical-align: text-top;
-  }
-  
-  /* category book list css */
-  
-  .category-books {
-    /* border: 1px solid red; */
-    align-items: center;
-    justify-content: center;
-    display: inline-block;
-    padding: 2rem;
-    width: 270px;
-    height: 436px;
-    padding: 0;
-    margin: 0;
-    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.08);
-    margin-bottom: 3rem;
-  }
-  
-  .category-books:hover{
-    transform: scale(1.1);
-    transition: all .5s;
-  }
-  .center-book {
-    justify-content: center;
-    display: flex;
-    background-color: rgba(242, 242, 244, 1);
-    padding: 50px;
-  }
-  .the-hover-btn{
-    font-size: 12px;
-    padding: 8px 12px;
-    background-color: rgba(242, 242, 244, 1);
-    border-radius: 33px;
-    border: none;
-    margin: 5px;
-    font-weight: 600;
-  }
-  .the-hover-btn:hover{
-    background-color: rgb(150, 252, 150);
-  }
-  
-  p h2 span {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 32px;
-    color: rgba(92, 96, 102, 1);
-  }
-  
-  p h2 {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 32px;
-    text-align: left;
-  }
+.category-filter {
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+  align-items: center;
+  padding: 8px;
+  width: 85px;
+  height: 42px;
+  border-radius: 4px;
+  border: 1px solid rgba(205, 206, 210, 1);
+  background-color: white;
+}
+
+.filter-icon {
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  vertical-align: text-top;
+}
+
+/* category book list css */
+
+.category-books {
+  /* border: 1px solid red; */
+  align-items: center;
+  justify-content: center;
+  display: inline-block;
+  padding: 2rem;
+  width: 270px;
+  height: 436px;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.08);
+  margin-bottom: 3rem;
+}
+
+.category-books:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
+.center-book {
+  justify-content: center;
+  display: flex;
+  background-color: rgba(242, 242, 244, 1);
+  padding: 50px;
+}
+
+.the-hover-btn {
+  font-size: 12px;
+  padding: 8px 12px;
+  background-color: rgba(242, 242, 244, 1);
+  border-radius: 33px;
+  border: none;
+  margin: 5px;
+  font-weight: 600;
+}
+
+.the-hover-btn:hover {
+  background-color: rgb(150, 252, 150);
+}
+
+p h2 span {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  color: rgba(92, 96, 102, 1);
+}
+
+p h2 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+}
