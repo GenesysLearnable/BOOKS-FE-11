@@ -7,7 +7,6 @@ import Community from "../Components/Community/Community.js";
 import Library from "../Components/Library/Library.js";
 import Category from "../Components/Category/Category.js";
 import "../Components/Hero/Hero.css";
-import MySlider from "../Components/slider/Slider.js";
 
 const Container = styled.div`
   max-width: 150rem;
@@ -32,10 +31,8 @@ const Homepage = () => {
           <button className="My-courses">Computer science</button>
           <button className="My-courses">Nurse</button>
         </div>
-
+        <ContinueReading />
         <div className="Book-details">
-          <MySlider />
-          {/* <ContinueReading /> */}
           <Category />
           <Community />
           <Library />

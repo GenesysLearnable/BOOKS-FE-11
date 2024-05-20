@@ -3,18 +3,25 @@ import "./ContinueReading.css";
 import Rectangle from "../../Images/Icons/Rectangle.png";
 import greendot from "../../Images/Icons/greendot.png";
 // import searchicon from '../../Images/Icons/search-icon.svg'
-import book2 from "../../Images/book2.png";
-import book1 from "../../Images/book1.png";
-import book3 from "../../Images/book3.png";
-import "animate.css";
-import MySlider from "../slider/Slider";
+// import book2 from "../../Images/book2.png";
+// import book1 from "../../Images/book1.png";
+// import book3 from "../../Images/book3.png";
+// import "animate.css";
+// import MySlider from "../slider/Slider";
+import ReadingCards from "../ContinueReadingCard/ReadingCards";
 
 function ContinueReading() {
   return (
     <div>
       <h3>Continue Reading</h3>
       <div className="continue-reading-row">
-        <div className="Wrapping">
+        <ReadingCards />
+        <ReadingCards />
+        <ReadingCards />
+        <ReadingCards />
+        <ReadingCards />
+
+        {/* <div className="Wrapping">
           <img
             style={{ width: "171px", height: "200px" }}
             src={book1}
@@ -56,8 +63,8 @@ function ContinueReading() {
               </div>
             </p>
           </div>
-        </div>
-
+        </div> */}
+        {/* 
         <div className="Wrapping">
           <img
             style={{ width: "171px", height: "200px" }}
@@ -146,7 +153,7 @@ function ContinueReading() {
               </div>
             </p>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
