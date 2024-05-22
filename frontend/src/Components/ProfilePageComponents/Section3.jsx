@@ -20,9 +20,12 @@ const Button = styled.button`
   border: ${(props) => (props.variance ? 'none' : '.1rem solid #003B00')};
   background: ${(props) => (props.variance ? 'transparent' : '#E6F0E6')};
   border-bottom: ${(props) => props.farRight && '.1rem solid #549D54'};
-  padding: ${(props) => props.small && '0.2rem 1rem'};
   padding: ${(props) => props.farRight && '.3rem 0'};
+  font-size: ${(props) => props.farRight && '1rem'};
   color: ${(props) => (props.farRight ? '#549D54' : '#003B00')};
+  padding: ${(props) => props.small && '0.2rem 1rem'};
+  font-size: ${(props) => props.small && '1rem'};
+  font-weight: ${(props) => props.small && 'bold'};
   display: flex;
   align-items: center;
   justify-content: center;
@@ -40,6 +43,10 @@ const Heading = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+`;
+
+const P = styled.p`
+  font-size: 1rem;
 `;
 
 const BtnCon = styled.div`
@@ -69,20 +76,19 @@ const EduDataCon = styled.div`
   align-items: flex-start;
   padding: 1rem 2rem 0 2rem;
   gap: 2rem;
-  margin-right: 2rem;
 `;
 const ImgBook = styled.img`
-  max-width: 8%;
-  height: 6rem;
+  width: 7rem;
+  height: 5rem;
 `;
 
 const Detail = styled.div`
   min-width: 88%;
-  font-size: 1.2rem;
+  font-size: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 10rem;
+  gap: 6rem;
 `;
 
 const Author = styled.div`
@@ -228,12 +234,12 @@ function Section3() {
         <HighlightsContainer>
           <Highlights>
             <BookDetail>
-              <p>
+              <P small="true">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum
                 quo eos reiciendis nobis expedita natus aut quae ullam aliquam
                 omnis ad, error, sed similique perferendis temporibus cumque
                 dolore?
-              </p>
+              </P>
               <Date>
                 <span>12/10/2020</span>
                 <span>09:06am</span>
@@ -246,12 +252,12 @@ function Section3() {
           </Highlights>
           <Highlights>
             <BookDetail>
-              <p>
+              <P small="true">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum
                 quo eos reiciendis nobis expedita natus aut quae ullam aliquam
                 omnis ad, error, sed similique perferendis temporibus cumque
                 dolore?
-              </p>
+              </P>
               <Date>
                 <span>12/10/2020</span>
                 <span>09:06am</span>
@@ -264,12 +270,12 @@ function Section3() {
           </Highlights>
           <Highlights>
             <BookDetail>
-              <p>
+              <P small="true">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum
                 quo eos reiciendis nobis expedita natus aut quae ullam aliquam
                 omnis ad, error, sed similique perferendis temporibus cumque
                 dolore?
-              </p>
+              </P>
               <Date>
                 <span>12/10/2020</span>
                 <span>09:06am</span>

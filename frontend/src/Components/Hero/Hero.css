@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
+
 * {
   padding: 0;
   margin: 0;
-  /* I included border box property here */
   box-sizing: border-box;
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
+
 .container {
   display: flex;
 }
@@ -15,11 +16,11 @@ html {
 }
 
 .hero-container {
-  flex-grow: 1;
-  display: flex;
+  /* flex-grow: 1; */
+  /* display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: center; */
 }
 
 .pic-content {
@@ -28,7 +29,7 @@ html {
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.7)
     ),
-    url('../../Images/homepic.jpeg');
+    url("../../Images/homepic.jpeg");
 
   /* I changed width to 100% instead of initial fixed width of  width: 1000px; */
   width: 100%;
@@ -36,10 +37,7 @@ html {
   background-size: cover;
 
   background-position: center center;
-  padding-right: 2rem;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  /* padding-right: 2rem; */
 }
 
 .pic-container {
@@ -48,6 +46,7 @@ html {
   align-items: center;
   gap: 10rem;
 }
+
 .search-container {
   display: flex;
   align-items: center;
@@ -134,17 +133,11 @@ html {
 }
 
 .Choose-courses {
+  margin-top: 20px;
   display: flex;
   align-items: center;
-  /* border: 1px solid red; */
-  margin-top: 3rem;
-  margin-left: 25%;
-  /* width: 68rem; */
-  height: 4.8rem;
-  gap: 2rem;
-  /* top: 41rem;
-  left: 23rem ;
-  gap: 1.6rem; */
+  justify-content: center;
+  overflow-x: hidden;
 }
 
 .book-text {
@@ -156,6 +149,7 @@ html {
   margin-top: 10px;
   font-size: 1rem;
 }
+
 h3 {
   font-family: EB Garamond;
   font-size: 32px;
@@ -166,6 +160,7 @@ h3 {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
 h5 {
   margin-top: 10px;
   font-size: 20px;
@@ -187,6 +182,7 @@ h5 {
   color: rgba(255, 255, 255, 1);
   border: none;
 }
+
 .My-courses {
   height: 4.8rem;
   border-radius: 0.4rem;
@@ -207,4 +203,50 @@ h5 {
 .My-courses:active {
   background-color: rgba(21, 21, 21, 1);
   color: white;
+}
+
+@media (width < 1024px) {
+  .pic-content {
+    width: 80px;
+    height: 20px;
+    background-size: cover;
+
+    background-position: center center;
+    /* padding-right: 2rem; */
+    border: 1px solid red;
+  }
+
+  .search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+    margin-left: 10rem;
+    width: 50rem;
+    height: 3rem;
+  }
+
+  .search {
+    margin-right: 2rem;
+    border: 0.1rem solid gray;
+    border-radius: 5rem;
+    width: 40rem;
+    height: 3rem;
+    padding: 0.6rem 1.4rem;
+    display: flex;
+    align-items: center;
+    border: 0.02rem solid white;
+    background-color: rgba(243, 244, 245, 0.3);
+    /* border: 1px solid red; */
+  }
+
+  .searchIcon {
+    width: 1.6rem;
+  }
+
+  .filter-search-icon {
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+  }
 }

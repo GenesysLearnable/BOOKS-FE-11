@@ -24,13 +24,20 @@ const Title = styled.div`
 const BioInfo = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
+  font-size: 1.4rem;
+`;
+
+const P = styled.p`
+  line-height: 2;
+  font-size: 1rem;
+  font-size: ${(props) => props.small && '1.2rem'};
 `;
 
 const Contacts = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
 `;
 
 const Contact = styled.div`
@@ -49,7 +56,6 @@ const EduDataCon = styled.div`
   align-items: flex-start;
   padding: 1rem 2rem 2rem 2rem;
   gap: 2rem;
-  margin-right: 2rem;
 `;
 
 const Heading = styled.div`
@@ -125,11 +131,12 @@ function Section2() {
       <BioDataCon variance="true">
         <Title>About</Title>
         <BioInfo>
-          <p>
+          <P small="true">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit.
             Reprehenderit, alias. Vel earum, magnam qui laboriosam, sed cum ex
-            sapiente quia, ab veritatis
-          </p>
+            sapiente quia, ab veritatisqui laboriosam, sed cum ex sapiente quia,
+            ab veritatis
+          </P>
           <Contacts>
             <Contact>
               <span>Email :</span> <span>Williams@gmail.com</span>
@@ -155,12 +162,12 @@ function Section2() {
             <Details>
               <ImgBook src={book1} alt="book-cover" />
               <BookDetail>
-                <p>
+                <P>
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Ipsum quo eos reiciendis nobis expedita natus aut quae ullam
                   aliquam omnis ad, error, sed similique perferendis temporibus
                   cumque dolore?
-                </p>
+                </P>
                 <Date>
                   <span>12/10/2020</span>
                   <span>09:06am</span>
@@ -175,12 +182,12 @@ function Section2() {
             <Details>
               <ImgBook src={book3} alt="book-cover" />
               <BookDetail>
-                <p>
+                <P>
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Ipsum quo eos reiciendis nobis expedita natus aut quae ullam
                   aliquam omnis ad, error, sed similique perferendis temporibus
                   cumque dolore?
-                </p>
+                </P>
                 <Date>
                   <span>12/10/2020</span>
                   <span>09:06am</span>
@@ -195,12 +202,12 @@ function Section2() {
             <Details>
               <ImgBook src={book2} alt="book-cover" />
               <BookDetail>
-                <p>
+                <P>
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Ipsum quo eos reiciendis nobis expedita natus aut quae ullam
                   aliquam omnis ad, error, sed similique perferendis temporibus
                   cumque dolore?
-                </p>
+                </P>
                 <Date>
                   <span>12/10/2020</span>
                   <span>09:06am</span>

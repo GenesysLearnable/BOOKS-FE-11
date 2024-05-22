@@ -3,14 +3,14 @@ import Aside from './Aside';
 import LogoContainer from './LogoContainer';
 
 const SideNav = styled.aside`
+  flex-basis: 20%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  flex-basis: 18%;
-  font-size: 1.4rem;
+  gap: 3rem;
+  font-size: 1.2rem;
   padding: 2rem 2.4rem;
-  gap: 2rem;
   min-height: 100vh;
 `;
 

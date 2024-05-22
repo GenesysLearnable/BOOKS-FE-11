@@ -7,8 +7,9 @@ import Section4 from './Section04';
 
 const SectionContainer = styled.div`
   flex-grow: 1;
-  padding: 2rem 0 0 1rem;
+  padding: 2rem 2rem 1rem;
   display: flex;
+
   flex-direction: column;
   gap: 3rem;
   border-left: 0.05rem solid #ced4da;
