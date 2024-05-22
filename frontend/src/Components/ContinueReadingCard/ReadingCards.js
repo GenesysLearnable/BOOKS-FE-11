@@ -1,8 +1,8 @@
-import React from "react";
-import "./ReadingCards.css";
-import book2 from "../../Images/book2.png";
-import Rectangle from "../../Images/Icons/Rectangle.png";
-import greendot from "../../Images/Icons/greendot.png";
+import React from 'react';
+import './ReadingCards.css';
+import book2 from '../../Images/book2.png';
+import Rectangle from '../../Images/Icons/Rectangle.png';
+import greendot from '../../Images/Icons/greendot.png';
 
 function ReadingCards() {
   return (
@@ -10,7 +10,7 @@ function ReadingCards() {
       <div className="Continue-reading-sub">
         <div className="Image-div">
           <img
-            style={{ width: "171px", height: "200px" }}
+            style={{ width: '120px', height: '170px' }}
             src={book2}
             alt="b00k1-pic"
             className="book-list"
@@ -29,9 +29,9 @@ function ReadingCards() {
           <div className="Reading-rate">
             <img
               style={{
-                width: "171",
-                height: "12px",
-                boarderRaduis: "12px",
+                width: '150px',
+                height: '12px',
+                boarderRaduis: '12px',
               }}
               src={Rectangle}
               alt="continue reading"
@@ -39,9 +39,9 @@ function ReadingCards() {
             />
             <img
               style={{
-                width: "11",
-                height: "12px",
-                boarderRaduis: "12px",
+                width: '11px',
+                height: '12px',
+                boarderRaduis: '12px',
               }}
               src={greendot}
               alt="continue reading"

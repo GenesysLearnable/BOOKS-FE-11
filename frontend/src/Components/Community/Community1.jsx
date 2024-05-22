@@ -5,12 +5,13 @@ import img2 from '../../Images/Icons/pic2.png';
 import img3 from '../../Images/Icons/pic3.png';
 import img4 from '../../Images/Icons/pic4.png';
 import count from '../../Images/Icons/count.png';
+import filterbutton from '../../Images/Icons/filter-button.svg';
 
 const Container = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 1rem;
   justify-content: center;
   align-items: flex-start;
   box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.3);
@@ -21,8 +22,9 @@ const Heading = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
 `;
+
 const InfoContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -41,7 +43,7 @@ const Info = styled.div`
 `;
 
 const ImgBook = styled.img`
-  width: 19rem;
+  width: 26rem;
   height: 28rem;
 `;
 const P = styled.p`
@@ -106,14 +108,16 @@ const CountContainer = styled.div`
   margin-left: -0.7rem;
   padding: 1rem;
 `;
-
-function Section04() {
+function Community1() {
   return (
     <Container>
       <Heading>
-        <span>Communities</span>
-        <Button farRight="true">View all notes</Button>
+        <h3>Community</h3>
+        <button className="category-filter">
+          <img src={filterbutton} alt="icon" className="filter-icon" /> Filter
+        </button>
       </Heading>
+
       <InfoContainer>
         <Info>
           <ImgBook src={book1} alt="book cover" />
@@ -172,4 +176,4 @@ function Section04() {
   );
 }
 
-export default Section04;
+export default Community1;

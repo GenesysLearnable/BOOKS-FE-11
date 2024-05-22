@@ -5,7 +5,7 @@ import { HiOutlinePencil } from 'react-icons/hi';
 import profileImg from '../../Images/profile.png';
 
 const BioDataCon = styled.div`
-  flex-basis: 40rem;
+  flex-basis: 35.5%;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -16,7 +16,7 @@ const BioDataCon = styled.div`
 `;
 
 const ImgContainer = styled.div`
-  width: 100%;
+  max-width: 100%;
   height: 15rem;
   border-top-right-radius: 1rem;
   border-top-left-radius: 1rem;
@@ -58,6 +58,7 @@ const Button = styled.button`
   border: ${(props) => (props.variance ? 'none' : '.1rem solid #003B00')};
   background: ${(props) => (props.variance ? 'transparent' : '#E6F0E6')};
   padding: 0.5rem 2rem;
+  font-size: 1.2rem;
   color: #003b00;
   display: flex;
   align-items: center;
@@ -75,7 +76,7 @@ const EduDataCon = styled.div`
   align-items: flex-start;
   padding: 1rem 2rem 0 2rem;
   gap: 2rem;
-  margin-right: 2rem;
+  font-size: 1rem;
 `;
 
 const Title = styled.div`

@@ -11,25 +11,25 @@
 }
 
 .Continue-reading-container:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   transition: all 0.5s;
 }
 
 .Continue-reading-sub {
   display: flex;
-  /* border: 1px solid red; */
 
-  /* width: 300px; */
+  width: 300px;
 }
 
 span {
   color: rgba(92, 96, 102, 1);
 }
 .long-name {
-  width: 160px; /* Set width as needed */
+  /* width: 160px; Set width as needed */
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-size: 1.6rem;
 }
 
 .course {
@@ -42,7 +42,7 @@ span {
 }
 
 .course-bk2 {
-  font-size: 20px;
+  font-size: 1.4rem;
   font-weight: 500;
   line-height: 32px;
   text-align: left;
@@ -76,7 +76,7 @@ span {
 }
 
 .rate-bk3 {
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 600;
   line-height: 25px;
   margin-top: 50px;
