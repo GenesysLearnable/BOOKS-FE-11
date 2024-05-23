@@ -21,6 +21,7 @@ function SearchResult() {
         <div className="pic-content">
           <SearchArea />
         </div>
+
         <h3>Search Result</h3>
         <div className="category-row">
           <div className="category-books">

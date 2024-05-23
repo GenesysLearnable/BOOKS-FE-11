@@ -9,7 +9,7 @@ const H3 = styled.h3`
 
 function ContinueReading() {
   return (
-    <div>
+    <div className="reading-container">
       <H3>Continue Reading.....</H3>
       <SliderComponent />
     </div>

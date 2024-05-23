@@ -1,14 +1,14 @@
-import React from "react";
-import "./Category.css";
-import book3 from "../../Images/book3.png";
-import filterbutton from "../../Images/Icons/filter-button.svg";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
+import React from 'react';
+import './Category.css';
+import book3 from '../../Images/book3.png';
+import filterbutton from '../../Images/Icons/filter-button.svg';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 
 function Category() {
   return (
-    <div>
-      <div className="header" id="section1">
+    <div className="category-container">
+      <div className="heading" id="section1">
         <h3 className="header">Category</h3>
         <button className="category-filter">
           <img src={filterbutton} alt="icon" className="filter-icon" /> Filter
@@ -20,8 +20,8 @@ function Category() {
           spaceBetween={10}
           slidesPerView={4}
           navigation={{
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
           }}
         >
           <SwiperSlide>
@@ -29,14 +29,14 @@ function Category() {
               <div className="center-book">
                 <img
                   style={{
-                    width: "120px",
-                    height: "150px",
-                    top: "44px",
-                    left: "66px",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    display: "flex",
-                    border: "1px solid green",
+                    width: '120px',
+                    height: '150px',
+                    top: '44px',
+                    left: '66px',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    display: 'flex',
+                    border: '1px solid green',
                   }}
                   src={book3}
                   alt="b00k1-pic"
@@ -59,14 +59,14 @@ function Category() {
               <div className="center-book">
                 <img
                   style={{
-                    width: "120px",
-                    height: "150px",
-                    top: "44px",
-                    left: "66px",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    display: "flex",
-                    border: "1px solid green",
+                    width: '120px',
+                    height: '150px',
+                    top: '44px',
+                    left: '66px',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    display: 'flex',
+                    border: '1px solid green',
                   }}
                   src={book3}
                   alt="b00k1-pic"
@@ -89,14 +89,14 @@ function Category() {
               <div className="center-book">
                 <img
                   style={{
-                    width: "120px",
-                    height: "150px",
-                    top: "44px",
-                    left: "66px",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    display: "flex",
-                    border: "1px solid green",
+                    width: '120px',
+                    height: '150px',
+                    top: '44px',
+                    left: '66px',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    display: 'flex',
+                    border: '1px solid green',
                   }}
                   src={book3}
                   alt="b00k1-pic"
@@ -119,14 +119,14 @@ function Category() {
               <div className="center-book">
                 <img
                   style={{
-                    width: "120px",
-                    height: "150px",
-                    top: "44px",
-                    left: "66px",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    display: "flex",
-                    border: "1px solid green",
+                    width: '120px',
+                    height: '150px',
+                    top: '44px',
+                    left: '66px',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    display: 'flex',
+                    border: '1px solid green',
                   }}
                   src={book3}
                   alt="b00k1-pic"
@@ -149,14 +149,14 @@ function Category() {
               <div className="center-book">
                 <img
                   style={{
-                    width: "120px",
-                    height: "150px",
-                    top: "44px",
-                    left: "66px",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    display: "flex",
-                    border: "1px solid green",
+                    width: '120px',
+                    height: '150px',
+                    top: '44px',
+                    left: '66px',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    display: 'flex',
+                    border: '1px solid green',
                   }}
                   src={book3}
                   alt="b00k1-pic"
@@ -179,14 +179,14 @@ function Category() {
               <div className="center-book">
                 <img
                   style={{
-                    width: "120px",
-                    height: "150px",
-                    top: "44px",
-                    left: "66px",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    display: "flex",
-                    border: "1px solid green",
+                    width: '120px',
+                    height: '150px',
+                    top: '44px',
+                    left: '66px',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    display: 'flex',
+                    border: '1px solid green',
                   }}
                   src={book3}
                   alt="b00k1-pic"

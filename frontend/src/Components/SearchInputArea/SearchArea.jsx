@@ -4,11 +4,14 @@ import searchIcon from '../../Images/Icons/search-icon.svg';
 import { useState } from 'react';
 import './SearchArea.css';
 import { useBookDetails } from '../context/BookContext';
+import { useNavigate } from 'react-router-dom';
 
 function SearchArea() {
   const { setIsLoading, setBookDetails, setError, inputValue, setInputValue } =
     useBookDetails();
   const [filterValue, setFilterValue] = useState('');
+
+  const navigate = useNavigate();
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -26,6 +29,7 @@ function SearchArea() {
       setBookDetails(data);
       setInputValue('');
       setFilterValue('');
+      navigate('/search');
     } catch (err) {
       setError(err.message);
     } finally {
@@ -34,37 +38,44 @@ function SearchArea() {
   }
 
   return (
-    <div>
-      <div className="pic-container">
-        <form className="search-container" onSubmit={handleSubmit}>
-          <div className="search">
-            <img src={searchIcon} alt="icon" className="searchIcon" />
-            <input
-              className="input-box"
-              placeholder="Author, book, topic..."
-              type="text"
-              value={inputValue}
-              onChange={(e) => setInputValue(e.target.value)}
-            />
-          </div>
-          <div>
-            <div className="button filter-btn">
-              <HiOutlineFilter className="filter-icon" />
-              <select
-                value={filterValue}
-                onChange={(e) => setFilterValue(e.target.value)}
-              >
-                <option value="">Filter</option>
-                <option value="author">Author</option>
-                <option value="categories">Categories</option>
-                <option value="keyword">Keyword</option>
-              </select>
-            </div>
-          </div>
-        </form>
-        <div className="icon-notification-container">
-          <HiOutlineBell className="icon-notification" />
+    <div className="pic-container">
+      <form className="search-container" onSubmit={handleSubmit}>
+        <div className="search">
+          <img src={searchIcon} alt="icon" className="searchIcon" />
+          <input
+            className="input-box"
+            placeholder="Author, book, topic..."
+            type="text"
+            value={inputValue}
+            onChange={(e) => setInputValue(e.target.value)}
+          />
         </div>
+        <div>
+          <div className="button filter-btn">
+            <HiOutlineFilter className="filter-icon" />
+            <select
+              value={filterValue}
+              onChange={(e) => setFilterValue(e.target.value)}
+              className="select"
+            >
+              <option className="option" value="">
+                Filter
+              </option>
+              <option className="option" value="author">
+                Author
+              </option>
+              <option className="option" value="categories">
+                Categories
+              </option>
+              <option className="option" value="keyword">
+                Keyword
+              </option>
+            </select>
+          </div>
+        </div>
+      </form>
+      <div className="icon-notification-container">
+        <HiOutlineBell className="icon-notification" />
       </div>
     </div>
   );
