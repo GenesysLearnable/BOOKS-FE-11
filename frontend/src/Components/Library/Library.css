@@ -1,9 +1,17 @@
-.header {
+.library-container {
+  box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.3);
+  padding: 2rem 2rem 4rem 2rem;
+  margin-top: 30px;
+}
+
+.library-header {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 0.5rem;
   font-size: 2.4rem;
+  margin-top: 40px;
+  padding-bottom: 15px;
 }
 
 .sub-head {
@@ -30,6 +38,8 @@
 .library-row {
   display: flex;
   gap: 1rem;
+  box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.3);
+  padding: 2rem 2rem 4rem 2rem;
 }
 
 .library:hover {

@@ -29,6 +29,16 @@
   width: 1.6rem;
 }
 
+.select {
+  background: transparent;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+.option {
+  color: black;
+}
+
 .filter-search-icon {
   margin-right: 10px;
   width: 30px;
