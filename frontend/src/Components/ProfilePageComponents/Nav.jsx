@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import Aside from './Aside';
-import LogoContainer from './LogoContainer';
+import styled from "styled-components";
+import Aside from "./Aside";
+import LogoContainer from "./LogoContainer";
 
 const SideNav = styled.aside`
   flex-basis: 20%;
@@ -10,7 +10,7 @@ const SideNav = styled.aside`
   justify-content: flex-start;
   gap: 3rem;
   font-size: 1.2rem;
-  padding: 2rem 2.4rem;
+  padding: 1rem 1.2rem;
   min-height: 100vh;
 `;
 
