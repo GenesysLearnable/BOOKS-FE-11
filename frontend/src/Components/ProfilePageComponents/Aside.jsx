@@ -1,16 +1,17 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 // import { NavLink } from 'react-router-dom';
 
-import { PiBookOpenTextDuotone } from 'react-icons/pi';
-import { RxHome } from 'react-icons/rx';
-import { MdOutlineLocalLibrary } from 'react-icons/md';
-import { HiOutlineUserCircle } from 'react-icons/hi';
+import { PiBookOpenTextDuotone } from "react-icons/pi";
+import { RxHome } from "react-icons/rx";
+import { MdOutlineLocalLibrary } from "react-icons/md";
+import { HiOutlineUserCircle } from "react-icons/hi";
+import "./Aside.css";
 
-import { HiOutlineLightningBolt } from 'react-icons/hi';
-import { HiOutlineQuestionMarkCircle } from 'react-icons/hi';
-import { HiOutlineCog } from 'react-icons/hi';
-import { HiChevronDown } from 'react-icons/hi';
-import { HiOutlineUserGroup } from 'react-icons/hi';
+import { HiOutlineLightningBolt } from "react-icons/hi";
+import { HiOutlineQuestionMarkCircle } from "react-icons/hi";
+import { HiOutlineCog } from "react-icons/hi";
+import { HiChevronDown } from "react-icons/hi";
+import { HiOutlineUserGroup } from "react-icons/hi";
 
 const AsideContainer = styled.div`
   display: flex;
@@ -24,7 +25,6 @@ const NavUl = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
   gap: 6rem;
 `;
 
@@ -33,14 +33,14 @@ const Ul = styled.ul`
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 1.4rem;
+  gap: 1.9rem;
   list-style: none;
 `;
 const Li = styled.li`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 0.8rem;
   cursor: pointer;
 `;
 
@@ -48,7 +48,6 @@ const Span = styled.span`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 3rem;
 `;
 
 const SpanSm = styled.span`
@@ -56,71 +55,178 @@ const SpanSm = styled.span`
   align-items: center;
   justify-content: space-between;
   gap: 0.5rem;
+  font-size: 1.8rem;
 `;
+
 function Aside() {
+  const scrollToSection = (id) => {
+    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <AsideContainer>
       <NavUl>
         <Ul>
-          <Li>
-            {/* <NavLink to="#"> */}
-            <RxHome />
-            <span>Home</span>
-            {/* </NavLink> */}
-          </Li>
-          <Li>
-            {/* <NavLink to="#"> */}
+          <Li
+            style={{
+              color: "rgba(54, 55, 61, 1)",
+              border: "none",
+              backgroundColor: "white",
+              fontWeight: "400",
+              lineHeight: "3.2rem",
+            }}
+          >
             <Span>
               <SpanSm>
-                <PiBookOpenTextDuotone />
-                <span>Categories</span>
+                <RxHome />
+                <span>Home</span>
               </SpanSm>
-
-              <HiChevronDown />
             </Span>
-            {/* </NavLink> */}
           </Li>
           <Li>
-            {/* <NavLink to="#"> */}
-            <MdOutlineLocalLibrary />
-            <span>Library</span>
-            {/* </NavLink> */}
+            <button
+              onClick={() => scrollToSection("section1")}
+              style={{
+                color: "rgba(54, 55, 61, 1)",
+                border: "none",
+                fontSize: "1.7rem",
+                backgroundColor: "white",
+                fontWeight: "400",
+                lineHeight: "3.2rem",
+              }}
+            >
+              <Span>
+                <SpanSm>
+                  <PiBookOpenTextDuotone />
+                  <span>Categories</span>
+                </SpanSm>
+
+                {/* <HiChevronDown /> */}
+              </Span>
+            </button>
           </Li>
           <Li>
-            {/* <NavLink to="#"> */}
-            <HiOutlineUserGroup />
-            <span>Community</span>
-            {/* </NavLink> */}
+            <button
+              onClick={() => scrollToSection("section2")}
+              style={{
+                color: "rgba(54, 55, 61, 1)",
+                border: "none",
+                fontSize: "1.7rem",
+                backgroundColor: "white",
+                fontWeight: "400",
+                lineHeight: "3.2rem",
+              }}
+            >
+              <Span>
+                <SpanSm>
+                  <MdOutlineLocalLibrary />
+                  <span>Library</span>
+                </SpanSm>
+              </Span>
+            </button>
+          </Li>
+          <Li>
+            <button
+              onClick={() => scrollToSection("section3")}
+              style={{
+                color: "rgba(54, 55, 61, 1)",
+                border: "none",
+                fontSize: "1.7rem",
+                backgroundColor: "white",
+                fontWeight: "400",
+                lineHeight: "3.2rem",
+              }}
+            >
+              <Span>
+                <SpanSm>
+                  <HiOutlineUserGroup />
+                  <span>Community</span>
+                </SpanSm>
+              </Span>
+            </button>
           </Li>
         </Ul>
 
         <Ul>
-          <Li>
+          <Li
+            style={{
+              color: "rgba(54, 55, 61, 1)",
+              border: "none",
+              fontSize: "1.7rem",
+              backgroundColor: "white",
+              fontWeight: "400",
+              lineHeight: "3.2rem",
+            }}
+          >
             {/* <NavLink to="#"> */}
-            <HiOutlineCog />
-            <span>Settings</span>
+            <Span>
+              <SpanSm>
+                <HiOutlineCog />
+                <span>Settings</span>
+              </SpanSm>
+            </Span>
             {/* </NavLink> */}
           </Li>
-          <Li>
+
+          <Li
+            style={{
+              color: "rgba(54, 55, 61, 1)",
+              border: "none",
+              fontSize: "1.7rem",
+              backgroundColor: "white",
+              fontWeight: "400",
+              lineHeight: "3.2rem",
+            }}
+          >
             {/* <NavLink to="#"> */}
-            <HiOutlineLightningBolt />
-            <span>AI Integration</span>
+            <Span>
+              <SpanSm>
+                <HiOutlineLightningBolt />
+                <span>AI Integration</span>
+              </SpanSm>
+            </Span>
             {/* </NavLink> */}
           </Li>
-          <Li>
+
+          <Li
+            style={{
+              color: "rgba(54, 55, 61, 1)",
+              border: "none",
+              fontSize: "1.7rem",
+              backgroundColor: "white",
+              fontWeight: "400",
+              lineHeight: "3.2rem",
+            }}
+          >
             {/* <NavLink to="#"> */}
-            <HiOutlineQuestionMarkCircle />
-            <span>Help</span>
+            <Span>
+              <SpanSm>
+                <HiOutlineQuestionMarkCircle />
+                <span>Help</span>
+              </SpanSm>
+            </Span>
             {/* </NavLink> */}
           </Li>
         </Ul>
       </NavUl>
       <div>
         <Ul>
-          <Li>
+          <Li
+            style={{
+              color: "rgba(54, 55, 61, 1)",
+              border: "none",
+              fontSize: "1.7rem",
+              backgroundColor: "white",
+              fontWeight: "400",
+              lineHeight: "3.2rem",
+            }}
+          >
             {/* <NavLink to=""> */}
-            <HiOutlineUserCircle />
-            <span>Account</span>
+            <Span>
+              <SpanSm>
+                <HiOutlineUserCircle />
+                <span>Account</span>
+              </SpanSm>
+            </Span>
             {/* </NavLink> */}
           </Li>
         </Ul>

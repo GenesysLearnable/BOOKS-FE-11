@@ -1,13 +1,12 @@
-import React from 'react';
-import Hero from '../Components/Hero/Hero.js';
-import Nav from '../Components/ProfilePageComponents/Nav.jsx';
-import styled from 'styled-components';
-import ContinueReading from '../Components/ContinueReading/ContinueReading.js';
-import Library from '../Components/Library/Library.js';
-import Category from '../Components/Category/Category.js';
-import '../Components/Hero/Hero.css';
-import Community1 from '../Components/Community/Community1.jsx';
-import SliderComponent from '../Components/Category/SliderComponent.jsx';
+import React from "react";
+import Hero from "../Components/Hero/Hero.js";
+import Nav from "../Components/ProfilePageComponents/Nav.jsx";
+import styled from "styled-components";
+import ContinueReading from "../Components/ContinueReading/ContinueReading.js";
+import Library from "../Components/Library/Library.js";
+import Category from "../Components/Category/Category.js";
+import "../Components/Hero/Hero.css";
+import Community from "../Components/Community/Community1.jsx";
 
 const Container = styled.div`
   display: flex;
@@ -21,7 +20,7 @@ const Homepage = () => {
     <>
       <Container>
         <Nav />
-        <div style={{ flexGrow: '0', flexShrink: '0', width: '85vw' }}>
+        <div style={{ flexGrow: "0", flexShrink: "0", width: "85vw" }}>
           <Hero />
 
           <div className="Choose-courses">
@@ -34,7 +33,7 @@ const Homepage = () => {
 
           <ContinueReading />
           <Category />
-          <Community1 />
+          <Community />
           <Library />
         </div>
       </Container>
