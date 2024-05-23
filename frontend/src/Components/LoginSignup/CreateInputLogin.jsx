@@ -135,12 +135,6 @@ function CreateInputLogin() {
     setFormData((prev) => ({ ...prev, [name]: value }));
   }
 
-  function handleSubmit(e) {
-    e.preventDefault();
-    console.log('Submitting ......');
-    mutate(formData);
-  }
-
   const { isLoading, mutate } = useMutation({
     mutationFn: fetchLoginData,
 
@@ -152,6 +146,12 @@ function CreateInputLogin() {
       toast.error(`Login failed ${err.message}`);
     },
   });
+
+  async function handleSubmit(e) {
+    e.preventDefault();
+
+    await mutate(formData);
+  }
 
   return (
     <InputDetails onSubmit={handleSubmit}>

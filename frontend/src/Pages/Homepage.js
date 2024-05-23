@@ -7,7 +7,6 @@ import Library from '../Components/Library/Library.js';
 import Category from '../Components/Category/Category.js';
 import '../Components/Hero/Hero.css';
 import Community1 from '../Components/Community/Community1.jsx';
-import SliderComponent from '../Components/Category/SliderComponent.jsx';
 
 const Container = styled.div`
   display: flex;

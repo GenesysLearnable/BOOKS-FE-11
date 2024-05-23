@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "DM Sans", sans-serif;
+  font-family: 'DM Sans', sans-serif;
 }
 
 .container {
@@ -15,121 +15,18 @@ html {
   font-size: 62.5%;
 }
 
-.hero-container {
-  /* flex-grow: 1; */
-  /* display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center; */
-}
-
 .pic-content {
   background-image: linear-gradient(
       to right,
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.7)
     ),
-    url("../../Images/homepic.jpeg");
+    url('../../Images/homepic.jpeg');
 
-  /* I changed width to 100% instead of initial fixed width of  width: 1000px; */
   width: 100%;
   height: 65vh;
   background-size: cover;
-
   background-position: center center;
-  /* padding-right: 2rem; */
-}
-
-.pic-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10rem;
-}
-
-.search-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.search {
-  margin-right: 2rem;
-  border: 0.1rem solid gray;
-  border-radius: 5rem;
-  width: 50rem;
-  height: 4rem;
-  padding: 0.6rem 1.4rem;
-  display: flex;
-  align-items: center;
-  border: 0.02rem solid white;
-  background-color: rgba(243, 244, 245, 0.3);
-  /* border: 1px solid red; */
-}
-
-.searchIcon {
-  width: 1.6rem;
-}
-
-.filter-search-icon {
-  margin-right: 10px;
-  width: 30px;
-  height: 30px;
-}
-
-.input-box {
-  background: transparent;
-  border: none;
-  outline: none;
-  padding: 0 0.8rem;
-  caret-color: white;
-  color: azure;
-  font-size: 1.5rem;
-}
-
-.input-box::placeholder {
-  font-weight: 400;
-  font-size: 1.6rem;
-  color: #cdced2;
-  font-style: italic;
-}
-
-.icon-notification-container {
-  width: 2.4rem;
-  height: 2.4rem;
-  border: 0.1rem solid #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.icon-notification {
-  color: #fff;
-  font-size: 1.6rem;
-}
-
-.filter-btn {
-  height: 3.7rem;
-  font-size: 1.4rem;
-  padding: 0.2rem 0.6rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.4rem;
-  border: 0.05rem solid #fff;
-  border-radius: 0.4rem;
-  background-color: transparent;
-  color: #fff;
-}
-
-.filter-btn span {
-  color: #fff;
-  font-size: 1.2rem;
-}
-
-.filter-icon {
-  font-size: 1rem;
-  color: #fff;
 }
 
 .Choose-courses {
@@ -152,13 +49,13 @@ html {
 
 h3 {
   font-family: EB Garamond;
-  font-size: 32px;
+  font-size: 18px;
   font-weight: 400;
-  line-height: 38.4px;
+  /* line-height: 38.4px; */
   text-align: left;
   color: rgba(54, 55, 61, 1);
-  margin-top: 20px;
-  margin-bottom: 20px;
+  /* margin-top: 20px;
+  margin-bottom: 20px; */
 }
 
 h5 {
@@ -237,7 +134,6 @@ h5 {
     align-items: center;
     border: 0.02rem solid white;
     background-color: rgba(243, 244, 245, 0.3);
-    /* border: 1px solid red; */
   }
 
   .searchIcon {

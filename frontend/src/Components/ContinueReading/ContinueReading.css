@@ -34,8 +34,8 @@ h3 {
   line-height: 38.4px;
   text-align: left;
   color: rgba(54, 55, 61, 1);
-  margin-top: 20px;
-  margin-bottom: 20px;
+  /* margin-top: 20px;
+  margin-bottom: 20px; */
 }
 h5 {
   margin-top: 10px;
