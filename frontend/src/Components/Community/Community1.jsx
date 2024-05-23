@@ -1,11 +1,11 @@
-import styled from 'styled-components';
-import book1 from '../../Images/book1.png';
-import img1 from '../../Images/Icons/pic1.png';
-import img2 from '../../Images/Icons/pic2.png';
-import img3 from '../../Images/Icons/pic3.png';
-import img4 from '../../Images/Icons/pic4.png';
-import count from '../../Images/Icons/count.png';
-import filterbutton from '../../Images/Icons/filter-button.svg';
+import styled from "styled-components";
+import book1 from "../../Images/book1.png";
+import img1 from "../../Images/Icons/pic1.png";
+import img2 from "../../Images/Icons/pic2.png";
+import img3 from "../../Images/Icons/pic3.png";
+import img4 from "../../Images/Icons/pic4.png";
+import count from "../../Images/Icons/count.png";
+import filterbutton from "../../Images/Icons/filter-button.svg";
 
 const Container = styled.div`
   width: 100%;
@@ -75,13 +75,13 @@ const BtnImgContainer = styled.div`
 `;
 
 const Button = styled.button`
-  border: ${(props) => (props.variance ? '.1rem solid #003B00' : 'none')};
-  background: ${(props) => (props.variance ? '#E6F0E6' : 'transparent')};
-  border-bottom: ${(props) => props.farRight && '.1rem solid #549D54'};
-  padding: ${(props) => props.variance && '0.8rem 4rem'};
-  font-size: ${(props) => props.variance && '1rem'};
-  border-radius: ${(props) => props.variance && '.3rem'};
-  color: ${(props) => (props.farRight ? '#549D54' : '#003B00')};
+  border: ${(props) => (props.variance ? ".1rem solid #003B00" : "none")};
+  background: ${(props) => (props.variance ? "#E6F0E6" : "transparent")};
+  border-bottom: ${(props) => props.farRight && ".1rem solid #549D54"};
+  padding: ${(props) => props.variance && "0.8rem 4rem"};
+  font-size: ${(props) => props.variance && "1rem"};
+  border-radius: ${(props) => props.variance && ".3rem"};
+  color: ${(props) => (props.farRight ? "#549D54" : "#003B00")};
   cursor: pointer;
 `;
 
@@ -110,7 +110,7 @@ const CountContainer = styled.div`
 `;
 function Community1() {
   return (
-    <Container>
+    <Container id="section3">
       <Heading>
         <h3>Community</h3>
         <button className="category-filter">

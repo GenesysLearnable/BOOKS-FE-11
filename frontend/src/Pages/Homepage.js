@@ -6,7 +6,7 @@ import ContinueReading from '../Components/ContinueReading/ContinueReading.js';
 import Library from '../Components/Library/Library.js';
 import Category from '../Components/Category/Category.js';
 import '../Components/Hero/Hero.css';
-import Community1 from '../Components/Community/Community1.jsx';
+import Community from '../Components/Community/Community1.jsx';
 
 const Container = styled.div`
   display: flex;
@@ -33,7 +33,7 @@ const Homepage = () => {
 
           <ContinueReading />
           <Category />
-          <Community1 />
+          <Community />
           <Library />
         </div>
       </Container>

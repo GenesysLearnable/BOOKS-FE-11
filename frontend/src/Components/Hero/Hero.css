@@ -110,14 +110,14 @@ h5 {
 
     background-position: center center;
     /* padding-right: 2rem; */
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
 
   .search-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin-left: 10rem;
     width: 50rem;
     height: 3rem;

@@ -1,0 +1,13 @@
+li span {
+  gap: 50px;
+}
+li span:hover {
+  background-color: rgb(243, 255, 244);
+  padding-right: 0.5rem;
+
+  border-radius: 0.5rem;
+}
+li span:active {
+  color: rgb(155, 230, 155);
+  font-size: 2rem;
+}

@@ -1,20 +1,15 @@
-import styled from 'styled-components';
-import logo from '../../Images/logo.png';
+import styled from "styled-components";
+import logo from "../../Images/logo.png";
 
 const Container = styled.div`
-  background: #f3f1f1;
-  width: 80%;
-  height: 3rem;
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  background-color: white;
 `;
 
 const Img = styled.img`
-  width: 100%;
+  width: 14.9rem;
   height: 4rem;
-
-  /* padding: 0.7rem 1.4rem; */
 `;
 
 function LogoContainer() {
