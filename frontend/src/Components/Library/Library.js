@@ -78,6 +78,7 @@ function Library() {
                   height: "220px",
                   boarderRaduis: "6px",
                   boxShadow: "1px solid rgba(229, 230, 233, 1) ",
+                  marginBottom: "50px",
                 }}
                 src={lib4}
                 alt="b00k1-pic"

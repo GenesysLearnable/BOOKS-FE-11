@@ -1,11 +1,21 @@
-import React from "react";
 import "./Category.css";
 import book3 from "../../Images/book3.png";
 import filterbutton from "../../Images/Icons/filter-button.svg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import Popup from "./Popup";
+import { useState } from "react";
 
 function Category() {
+  const [popupContent, setPopupContent] = useState(null);
+
+  const showPopup = (content) => {
+    setPopupContent(content);
+  };
+
+  const closePopup = () => {
+    setPopupContent(null);
+  };
   return (
     <div>
       <div className="header" id="section1">
@@ -48,7 +58,16 @@ function Category() {
                   <h2 className="title">Essential Cell Biology</h2>
                   <span>Bruce Alberts</span>
                 </div>
-                <button className="the-hover-btn">Science</button>
+                <button
+                  className="the-hover-btn"
+                  onClick={() => showPopup("Content for Popup 1")}
+                >
+                  Science
+                </button>
+                <Popup
+                  show={popupContent !== null}
+                  onClose={closePopup}
+                ></Popup>
                 <button className="the-hover-btn">Microbiology</button> <br />
                 <button className="the-hover-btn">MCB 206</button>
               </div>
@@ -78,7 +97,16 @@ function Category() {
                   <h2 className="title">Essential Cell Biology</h2>
                   <span>Bruce Alberts</span>
                 </div>
-                <button className="the-hover-btn">Science</button>
+                <button
+                  className="the-hover-btn"
+                  onClick={() => showPopup("Content for Popup 1")}
+                >
+                  Science
+                </button>
+                <Popup
+                  show={popupContent !== null}
+                  onClose={closePopup}
+                ></Popup>
                 <button className="the-hover-btn">Microbiology</button> <br />
                 <button className="the-hover-btn">MCB 206</button>
               </div>

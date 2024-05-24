@@ -30,6 +30,7 @@
 .library-row {
   display: flex;
   gap: 1rem;
+  margin-bottom: 100px;
 }
 
 .library:hover {
