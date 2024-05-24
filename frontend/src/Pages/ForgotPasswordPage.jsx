@@ -3,6 +3,7 @@ import { useMutation } from '@tanstack/react-query';
 import toast from 'react-hot-toast';
 import { useNavigate } from 'react-router';
 import styled from 'styled-components';
+import { useData } from '../Components/context/UserData';
 
 const Container = styled.form`
   margin: 10rem auto;
@@ -97,7 +98,8 @@ async function requestReset(email) {
   return await res.json();
 }
 
-function ForgotPasswordPage({ setEmail, email }) {
+function ForgotPasswordPage() {
+  const { setEmail, email } = useData();
   const navigate = useNavigate();
 
   const { mutate, isLoading } = useMutation({

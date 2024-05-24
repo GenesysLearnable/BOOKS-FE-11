@@ -12,7 +12,7 @@
 
 .Continue-reading-container:hover {
   transform: scale(1.05);
-  transition: all 0.5s;
+  transition: all 1s;
 }
 
 .Continue-reading-sub {

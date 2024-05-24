@@ -17,8 +17,8 @@ function Category() {
     setPopupContent(null);
   };
   return (
-    <div>
-      <div className="header" id="section1">
+    <div className="category-container">
+      <div className="heading" id="section1">
         <h3 className="header">Category</h3>
         <button className="category-filter">
           <img src={filterbutton} alt="icon" className="filter-icon" /> Filter

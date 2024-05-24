@@ -1,3 +1,9 @@
+.reading-container {
+  box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.3);
+  padding: 2rem 2rem 4rem 2rem;
+  margin-top: 30px;
+}
+
 .continue-reading-row {
   display: flex;
   gap: 24px;
@@ -34,8 +40,8 @@ h3 {
   line-height: 38.4px;
   text-align: left;
   color: rgba(54, 55, 61, 1);
-  margin-top: 20px;
-  margin-bottom: 20px;
+  /* margin-top: 20px;
+  margin-bottom: 20px; */
 }
 h5 {
   margin-top: 10px;

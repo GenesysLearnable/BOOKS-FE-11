@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import logo from '../Images/Vector.png';
 import { useNavigate } from 'react-router-dom';
+import { useData } from '../Components/context/UserData';
 
 const Container = styled.div`
   margin: 10rem auto;
@@ -74,7 +75,9 @@ const Btn = styled.button`
   font-size: 1.2rem;
 `;
 
-function ResetPassword({ email }) {
+function ResetPassword() {
+  const { email } = useData();
+
   const navigate = useNavigate();
   const reveal = email.slice(0, 2);
   const mask = email.split('@')[0].slice(2).replace(/./g, '*');
