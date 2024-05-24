@@ -8,7 +8,7 @@ import filterbutton from "../../Images/Icons/filter-button.svg";
 
 function Community() {
   return (
-    <div id="section3">
+    <div>
       <h3>Community </h3>
       <button className="category-filter">
         <img src={filterbutton} alt="icon" className="filter-icon" /> Filter
