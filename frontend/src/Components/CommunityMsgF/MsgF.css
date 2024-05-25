@@ -1,0 +1,112 @@
+.positions {
+  display: flex;
+  justify-content: right;
+  width: 100%;
+}
+.Community1-div {
+  display: flex;
+  padding-top: 2rem;
+  left: -2px;
+  gap: 16px;
+  opacity: 0px;
+  border: 1px solid rgba(243, 244, 247, 1);
+  padding: 20px;
+  flex-direction: column;
+}
+.Community-plus {
+  display: flex;
+  gap: 16rem;
+}
+
+.Community-plus h4 {
+  color: var(--black, #151515);
+  font-family: "EB Garamond";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+input {
+  width: 35.5rem;
+  height: 5rem;
+  border-radius: 5rem;
+  border: 1px solid rgba(229, 230, 233, 1);
+  padding: 2rem;
+  font-size: 1.8rem;
+}
+
+.group1-section {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid rgba(229, 230, 233, 1); */
+  padding: 10px;
+}
+hr {
+  border: 0.5px solid rgba(229, 230, 233, 1);
+}
+
+.img-sec {
+  border-radius: 10rem;
+}
+
+.texts-sec h6 {
+  overflow: hidden;
+  color: var(--Gray_06, #585f6a);
+  text-overflow: ellipsis;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+}
+
+.boldtext-sec {
+  overflow: hidden;
+  color: var(--Gray_07, #36373d);
+  text-overflow: ellipsis;
+  font-family: "EB Garamond";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+
+  /* 23.4px */
+}
+
+.timer {
+  color: var(--Gray_06, #585f6a);
+  text-align: right;
+  font-family: "DM Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 19.2px */
+}
+
+.Community-chat-section {
+  flex-grow: 1;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.inside-chat {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  gap: 32px;
+  background: var(--Foundation-Green-green-50, #e6f0e6);
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.08);
+}
+
+.p-text-area {
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  margin-top: 10px;
+}
+
+.right-hand-section {
+  vertical-align: text-top;
+}

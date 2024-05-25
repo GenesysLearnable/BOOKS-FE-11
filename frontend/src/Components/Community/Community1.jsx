@@ -7,6 +7,8 @@ import img4 from "../../Images/Icons/pic4.png";
 import count from "../../Images/Icons/count.png";
 import filterbutton from "../../Images/Icons/filter-button.svg";
 
+import { useState } from "react";
+
 const Container = styled.div`
   width: 100%;
   display: flex;
@@ -108,7 +110,13 @@ const CountContainer = styled.div`
   margin-left: -0.7rem;
   padding: 1rem;
 `;
-function Community1() {
+
+const Community1 = () => {
+  const history = useState();
+
+  const navigateToPage1 = () => {
+    history.push("/message");
+  };
   return (
     <Container id="section3">
       <Heading>
@@ -132,7 +140,9 @@ function Community1() {
               </P>
             </div>
             <BtnImgContainer>
-              <Button variance="true">Join</Button>
+              <Button onClick={navigateToPage1} variance="true">
+                Join
+              </Button>
               <Images>
                 <Img src={img1} alt="img-1" />
                 <Img src={img2} alt="img-2" />
@@ -174,6 +184,6 @@ function Community1() {
       </InfoContainer>
     </Container>
   );
-}
+};
 
 export default Community1;
