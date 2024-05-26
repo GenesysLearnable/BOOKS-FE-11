@@ -4,9 +4,13 @@ import book3 from '../../Images/book3.png';
 
 import { useBookDetails } from '../context/BookContext';
 import SearchArea from '../SearchInputArea/SearchArea';
+import { useTextBook } from '../context/CurrentBookContext';
+import { useNavigate } from 'react-router-dom';
 
 function SearchResult() {
-  const { bookDetails, inputValue } = useBookDetails();
+  const { bookDetails, inputValue, isLoading, error } = useBookDetails();
+  const { setCurrentText } = useTextBook();
+  const navigate = useNavigate();
 
   function trunc(name, maxLength) {
     if (name.length <= maxLength) {
@@ -730,6 +734,32 @@ function SearchResult() {
       </div>
     );
   }
+
+  if (isLoading) {
+    return (
+      <div className="hero-container">
+        <div className="pic-content">
+          <SearchArea />
+        </div>
+        <h3>Search Result</h3>
+        <div style={{ font: '14px' }}>Loading .....</div>;
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="hero-container">
+        <div className="pic-content">
+          <SearchArea />
+        </div>
+        <h3>Search Result</h3>
+
+        <div>Unable to fetch data</div>
+      </div>
+    );
+  }
+
   if (bookDetails) {
     return (
       <div className="hero-container">
@@ -740,8 +770,20 @@ function SearchResult() {
 
         <div className="cover-container">
           {bookDetails.data?.map((d, i) => {
+            setCurrentText({
+              id: d.id,
+              title: d.title,
+              image: d.thumbnail,
+              author: d.author,
+              url: d.url,
+              categories: d.categories,
+            });
             return (
-              <div className="category-books" key={i}>
+              <div
+                className="category-books"
+                key={i}
+                onClick={() => navigate('/bookdetails')}
+              >
                 <div className="center-book">
                   <img
                     style={{

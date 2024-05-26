@@ -1,12 +1,13 @@
-import React from "react";
-import Hero from "../Components/Hero/Hero.js";
-import Nav from "../Components/ProfilePageComponents/Nav.jsx";
-import styled from "styled-components";
-import ContinueReading from "../Components/ContinueReading/ContinueReading.js";
-import Library from "../Components/Library/Library.js";
-import Category from "../Components/Category/Category.js";
-import "../Components/Hero/Hero.css";
-import Community from "../Components/Community/Community1.jsx";
+import React from 'react';
+import Hero from '../Components/Hero/Hero.js';
+import Nav from '../Components/ProfilePageComponents/Nav.jsx';
+import styled from 'styled-components';
+import ContinueReading from '../Components/ContinueReading/ContinueReading.js';
+import Library from '../Components/Library/Library.js';
+import Category from '../Components/Category/Category.js';
+import '../Components/Hero/Hero.css';
+import Community from '../Components/Community/Community1.jsx';
+import { useBookDetails } from '../Components/context/BookContext.jsx';
 
 const Container = styled.div`
   display: flex;
@@ -28,6 +29,7 @@ const Section = styled.div`
 `;
 
 const Homepage = () => {
+  const { isLoading } = useBookDetails();
   return (
     <>
       <Container>
@@ -42,11 +44,16 @@ const Homepage = () => {
               <button className="My-courses">Computer science</button>
               <button className="My-courses">Nurse</button>
             </div>
-
-            <ContinueReading />
-            <Category />
-            <Community />
-            <Library />
+            {isLoading ? (
+              <h2>Loading</h2>
+            ) : (
+              <>
+                <ContinueReading />
+                <Category />
+                <Community />
+                <Library />
+              </>
+            )}
           </Section>
         </Main>
       </Container>
