@@ -8,7 +8,6 @@ import {
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import { Toaster } from 'react-hot-toast';
-
 import GlobalStyle from './styles/GlobalStyles';
 import Homepage from './Pages/Homepage';
 import ProfilePage from './Pages/ProfilePage.jsx';
@@ -21,6 +20,7 @@ import NewPasswordPage from './Pages/NewPasswordPage.jsx';
 import PageNotFound from './Pages/PageNotFound.jsx';
 import { BookContext } from './Components/context/BookContext.jsx';
 import { UserData } from './Components/context/UserData.jsx';
+import CommunityMsg from './Pages/CommunityMsg.js';
 import ProfileForm from './Pages/ProfileForm.jsx';
 import BookDetails from './Pages/BookDetails.jsx';
 import { CurrentBook } from './Components/context/CurrentBookContext.jsx';
@@ -47,10 +47,8 @@ export default function App() {
                 <Route path="forgotPassword" element={<ForgotPasswordPage />} />
                 <Route path="resetPassword" element={<ResetPassword />} />
                 <Route path="resetPassword/:id" element={<NewPasswordPage />} />
-                <Route path="profileform" element={<ProfileForm />} />
-                <Route path="bookdetails" element={<BookDetails />} />
-
                 <Route path="*" element={<PageNotFound />} />
+                <Route path="message" element={<CommunityMsg />} />
               </Routes>
             </Router>
             <ReactQueryDevtools initialIsOpen={false} />

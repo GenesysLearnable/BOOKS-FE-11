@@ -1,11 +1,13 @@
-import styled from 'styled-components';
-import book1 from '../../Images/book1.png';
-import img1 from '../../Images/Icons/pic1.png';
-import img2 from '../../Images/Icons/pic2.png';
-import img3 from '../../Images/Icons/pic3.png';
-import img4 from '../../Images/Icons/pic4.png';
-import count from '../../Images/Icons/count.png';
-import filterbutton from '../../Images/Icons/filter-button.svg';
+import styled from "styled-components";
+import book1 from "../../Images/book1.png";
+import img1 from "../../Images/Icons/pic1.png";
+import img2 from "../../Images/Icons/pic2.png";
+import img3 from "../../Images/Icons/pic3.png";
+import img4 from "../../Images/Icons/pic4.png";
+import count from "../../Images/Icons/count.png";
+import filterbutton from "../../Images/Icons/filter-button.svg";
+
+import { useState } from "react";
 
 const Container = styled.div`
   width: 100%;
@@ -75,13 +77,13 @@ const BtnImgContainer = styled.div`
 `;
 
 const Button = styled.button`
-  border: ${(props) => (props.variance ? '.1rem solid #003B00' : 'none')};
-  background: ${(props) => (props.variance ? '#E6F0E6' : 'transparent')};
-  border-bottom: ${(props) => props.farRight && '.1rem solid #549D54'};
-  padding: ${(props) => props.variance && '0.8rem 4rem'};
-  font-size: ${(props) => props.variance && '1rem'};
-  border-radius: ${(props) => props.variance && '.3rem'};
-  color: ${(props) => (props.farRight ? '#549D54' : '#003B00')};
+  border: ${(props) => (props.variance ? ".1rem solid #003B00" : "none")};
+  background: ${(props) => (props.variance ? "#E6F0E6" : "transparent")};
+  border-bottom: ${(props) => props.farRight && ".1rem solid #549D54"};
+  padding: ${(props) => props.variance && "0.8rem 4rem"};
+  font-size: ${(props) => props.variance && "1rem"};
+  border-radius: ${(props) => props.variance && ".3rem"};
+  color: ${(props) => (props.farRight ? "#549D54" : "#003B00")};
   cursor: pointer;
 `;
 
@@ -108,9 +110,15 @@ const CountContainer = styled.div`
   margin-left: -0.7rem;
   padding: 1rem;
 `;
-function Community1() {
+
+const Community1 = () => {
+  const history = useState();
+
+  const navigateToPage1 = () => {
+    history.push("/message");
+  };
   return (
-    <Container>
+    <Container id="section3">
       <Heading>
         <h3>Community</h3>
         <button className="category-filter">
@@ -132,7 +140,9 @@ function Community1() {
               </P>
             </div>
             <BtnImgContainer>
-              <Button variance="true">Join</Button>
+              <Button onClick={navigateToPage1} variance="true">
+                Join
+              </Button>
               <Images>
                 <Img src={img1} alt="img-1" />
                 <Img src={img2} alt="img-2" />
@@ -174,6 +184,6 @@ function Community1() {
       </InfoContainer>
     </Container>
   );
-}
+};
 
 export default Community1;

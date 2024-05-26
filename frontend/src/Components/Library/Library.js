@@ -1,12 +1,12 @@
-import React from 'react';
-import './Library.css';
-import lib from '../../Images/lib.png';
-import lib2 from '../../Images/lib2.png';
-import lib3 from '../../Images/lib3.png';
-import lib4 from '../../Images/lib4.png';
-import filterbutton from '../../Images/Icons/filter-button.svg';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
+import React from "react";
+import "./Library.css";
+import lib from "../../Images/lib.png";
+import lib2 from "../../Images/lib2.png";
+import lib3 from "../../Images/lib3.png";
+import lib4 from "../../Images/lib4.png";
+import filterbutton from "../../Images/Icons/filter-button.svg";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 
 function Library() {
   return (
@@ -23,8 +23,8 @@ function Library() {
         spaceBetween={10}
         slidesPerView={4}
         navigation={{
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         }}
       >
         <div className="library-row">
@@ -32,10 +32,10 @@ function Library() {
             <div className="library">
               <img
                 style={{
-                  width: '220px',
-                  height: '220px',
-                  boarderRaduis: '6px',
-                  boxShadow: '1px solid rgba(229, 230, 233, 1) ',
+                  width: "220px",
+                  height: "220px",
+                  boarderRaduis: "6px",
+                  boxShadow: "1px solid rgba(229, 230, 233, 1) ",
                 }}
                 src={lib}
                 alt="b00k1-pic"
@@ -46,10 +46,10 @@ function Library() {
             <div className="library">
               <img
                 style={{
-                  width: '220px',
-                  height: '220px',
-                  boarderRaduis: '6px',
-                  boxShadow: '1px solid rgba(229, 230, 233, 1) ',
+                  width: "220px",
+                  height: "220px",
+                  boarderRaduis: "6px",
+                  boxShadow: "1px solid rgba(229, 230, 233, 1) ",
                 }}
                 src={lib2}
                 alt="b00k1-pic"
@@ -60,10 +60,10 @@ function Library() {
             <div className="library">
               <img
                 style={{
-                  width: '220px',
-                  height: '220px',
-                  boarderRaduis: '6px',
-                  boxShadow: '1px solid rgba(229, 230, 233, 1) ',
+                  width: "220px",
+                  height: "220px",
+                  boarderRaduis: "6px",
+                  boxShadow: "1px solid rgba(229, 230, 233, 1) ",
                 }}
                 src={lib3}
                 alt="b00k1-pic"
@@ -74,10 +74,10 @@ function Library() {
             <div className="library">
               <img
                 style={{
-                  width: '220px',
-                  height: '220px',
-                  boarderRaduis: '6px',
-                  boxShadow: '1px solid rgba(229, 230, 233, 1) ',
+                  width: "220px",
+                  height: "220px",
+                  boarderRaduis: "6px",
+                  boxShadow: "1px solid rgba(229, 230, 233, 1) ",
                 }}
                 src={lib4}
                 alt="b00k1-pic"
