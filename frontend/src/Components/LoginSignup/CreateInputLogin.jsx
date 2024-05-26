@@ -1,4 +1,4 @@
-import { useMutation } from '@tanstack/react-query';
+// import { useMutation } from '@tanstack/react-query';
 import { useState } from 'react';
 import toast from 'react-hot-toast';
 import { HiOutlineEye, HiOutlineEyeOff } from 'react-icons/hi';
@@ -106,24 +106,10 @@ const ForgotPassword = styled.div`
   cursor: pointer;
 `;
 
-async function fetchLoginData(formData) {
-  const res = await fetch(
-    'https://books-be-11.onrender.com/api/v1/users/login',
-    {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(formData),
-    }
-  );
-  if (!res.ok) {
-    throw new Error('Could not connect to server');
-  }
-  return await res.json();
-}
-
 function CreateInputLogin() {
   const [revealPassword, setRevealPassword] = useState(false);
   const [formData, setFormData] = useState({ email: '', password: '' });
+  const [isLoading, setIsLoading] = useState(false);
   const navigate = useNavigate();
 
   function showPassword() {
@@ -135,22 +121,33 @@ function CreateInputLogin() {
     setFormData((prev) => ({ ...prev, [name]: value }));
   }
 
-  const { isLoading, mutate } = useMutation({
-    mutationFn: fetchLoginData,
-
-    onSuccess: () => {
+  async function fetchLoginData(formData) {
+    try {
+      setIsLoading(true);
+      const res = await fetch(
+        'https://books-be-11.onrender.com/api/v1/users/login',
+        {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(formData),
+        }
+      );
+      if (!res.ok) {
+        throw new Error('Could not connect to server');
+      }
       toast.success('Login successful');
       navigate('/home');
-    },
-    onError: (err) => {
-      toast.error(`Login failed ${err.message}`);
-    },
-  });
+      return await res.json();
+    } catch (err) {
+      return toast.error(err.message);
+    } finally {
+      setIsLoading(false);
+    }
+  }
 
   async function handleSubmit(e) {
     e.preventDefault();
-
-    await mutate(formData);
+    await fetchLoginData(formData);
   }
 
   return (
@@ -186,7 +183,7 @@ function CreateInputLogin() {
 
       <Action>
         <SignUp disabled={isLoading} type="submit">
-          Login
+          {isLoading ? 'Logging....' : 'Login'}
         </SignUp>
         <Terms>
           By Logging in, you agree to our

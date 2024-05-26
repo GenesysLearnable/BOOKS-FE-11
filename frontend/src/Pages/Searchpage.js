@@ -8,7 +8,6 @@ const Container = styled.div`
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  /* gap: 1rem; */
   color: #495057;
 `;
 
