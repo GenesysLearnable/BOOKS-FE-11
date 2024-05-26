@@ -1,6 +1,6 @@
 import React from "react";
 import "./MsgF.css";
-import searchIcon from "../../Images/Icons/search-icon.svg";
+
 import group1 from "./CommImages/group1.svg";
 import group2 from "./CommImages/group2.svg";
 import group3 from "./CommImages/group3.svg";
@@ -37,8 +37,10 @@ function MsgF() {
         </div>
 
         <div className="input-div">
-          <img src={searchIcon} alt="icon" className="searchIcon" />
-          <input placeholder="Search" />
+          <div>
+            {" "}
+            <input placeholder="Search" />
+          </div>
         </div>
         <hr />
         <div className="group1-section">
@@ -183,7 +185,7 @@ function MsgF() {
           </h3>
 
           {/* Purity */}
-          <div style={{ padding: "20px" }}>
+          <div className="purity-text" style={{ padding: "20px" }}>
             <div style={{ display: "flex" }}>
               <img src={profile1} alt="logo" />
               <p
@@ -202,7 +204,8 @@ function MsgF() {
               </p>
             </div>
             <div
-              style={{ marginTop: "10px", width: "526px", marginLeft: "20px" }}
+              className="purity-subtext"
+              style={{ marginTop: "10px", width: "clamp(100px, 100%, 600px" }}
             >
               <p
                 style={{
@@ -266,6 +269,7 @@ function MsgF() {
                 position: "absolute",
                 right: "10px",
                 top: "2px",
+                width: "clamp(100px, 100%, 600px",
               }}
             >
               <p

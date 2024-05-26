@@ -7,7 +7,7 @@ import img4 from "../../Images/Icons/pic4.png";
 import count from "../../Images/Icons/count.png";
 import filterbutton from "../../Images/Icons/filter-button.svg";
 
-import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Container = styled.div`
   width: 100%;
@@ -112,10 +112,10 @@ const CountContainer = styled.div`
 `;
 
 const Community1 = () => {
-  const history = useState();
+  const navigate = useNavigate();
 
   const navigateToPage1 = () => {
-    history.push("/message");
+    navigate("/message");
   };
   return (
     <Container id="section3">

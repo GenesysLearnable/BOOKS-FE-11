@@ -12,6 +12,7 @@ import { HiOutlineQuestionMarkCircle } from "react-icons/hi";
 import { HiOutlineCog } from "react-icons/hi";
 import { HiChevronDown } from "react-icons/hi";
 import { HiOutlineUserGroup } from "react-icons/hi";
+import { useNavigate } from "react-router-dom";
 
 const AsideContainer = styled.div`
   display: flex;
@@ -62,6 +63,14 @@ function Aside() {
   const scrollToSection = (id) => {
     document.getElementById(id).scrollIntoView({ behavior: "smooth" });
   };
+  const navigate = useNavigate();
+
+  const navigateToPage1 = () => {
+    navigate("/profile");
+  };
+  const navigateToPage2 = () => {
+    navigate("/home");
+  };
   return (
     <AsideContainer>
       <NavUl>
@@ -78,7 +87,7 @@ function Aside() {
             <Span>
               <SpanSm>
                 <RxHome />
-                <span>Home</span>
+                <span onClick={navigateToPage2}>Home</span>
               </SpanSm>
             </Span>
           </Li>
@@ -224,7 +233,7 @@ function Aside() {
             <Span>
               <SpanSm>
                 <HiOutlineUserCircle />
-                <span>Account</span>
+                <span onClick={navigateToPage1}>Account</span>
               </SpanSm>
             </Span>
             {/* </NavLink> */}

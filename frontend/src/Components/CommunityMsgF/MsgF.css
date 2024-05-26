@@ -1,17 +1,19 @@
 .positions {
   display: flex;
   justify-content: right;
-  width: 100%;
+
+  width: "clamp(100px, 100%, 600px";
 }
 .Community1-div {
   display: flex;
   padding-top: 2rem;
-  left: -2px;
+  /* left: -2px; */
   gap: 16px;
-  opacity: 0px;
+  /* opacity: 0px; */
   border: 1px solid rgba(243, 244, 247, 1);
   padding: 20px;
   flex-direction: column;
+  flex: 1 1 80px;
 }
 .Community-plus {
   display: flex;
@@ -26,18 +28,34 @@
   font-weight: 700;
 }
 
+.input-div {
+  display: flex;
+}
+
 input {
+  display: flex;
+  border-radius: 5rem;
   width: 35.5rem;
   height: 5rem;
-  border-radius: 5rem;
-  border: 1px solid rgba(229, 230, 233, 1);
-  padding: 2rem;
+  padding-left: 3rem;
   font-size: 1.8rem;
+  border: 1px solid rgba(229, 230, 233, 1);
+  justify-content: center;
+}
+
+.input:active {
+  border-color: 1px solid red;
+}
+.Icon {
+  margin-top: 1px;
+  position: absolute;
+  /* top: 8.5rem;
+  left: 26rem; */
 }
 
 .group1-section {
   display: flex;
-  justify-content: space-between;
+  gap: 20px;
   /* border: 1px solid rgba(229, 230, 233, 1); */
   padding: 10px;
 }
@@ -109,4 +127,41 @@ hr {
 
 .right-hand-section {
   vertical-align: text-top;
+}
+
+@media (max-width: 768px) {
+  .positions {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .purity-text {
+    flex-wrap: wrap;
+  }
+  .Community-plus {
+    display: flex;
+    gap: 40rem;
+  }
+
+  .Community-plus h4 {
+    color: var(--black, #151515);
+    font-family: "EB Garamond";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  .input-div {
+    display: flex;
+  }
+
+  input {
+    display: flex;
+    border-radius: 5rem;
+    width: 50rem;
+    height: 5rem;
+    padding-left: 3rem;
+    font-size: 1.8rem;
+    border: 1px solid rgba(229, 230, 233, 1);
+    justify-content: center;
+  }
 }
