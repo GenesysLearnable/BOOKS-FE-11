@@ -10,6 +10,8 @@ const Hero = () => {
     <div className="hero-container">
       <div className="pic-content">
         <SearchArea />
+        
+
       </div>
     </div>
   );

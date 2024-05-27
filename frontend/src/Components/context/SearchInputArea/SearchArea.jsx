@@ -19,7 +19,7 @@ function SearchArea() {
 
     try {
       const res = await fetch(
-       ` https://books-be-11.onrender.com/api/v1/ebooks/search?${filterValue}=${inputValue}`
+        `https://books-be-11.onrender.com/api/v1/ebooks/search?${filterValue}=${inputValue}`
       );
 
       if (!res.ok) {
@@ -81,4 +81,4 @@ function SearchArea() {
   );
 }
 
-export default SearchArea;
+export default SearchArea;

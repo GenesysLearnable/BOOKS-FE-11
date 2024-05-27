@@ -21,6 +21,7 @@ import NewPasswordPage from './Pages/NewPasswordPage.jsx';
 import PageNotFound from './Pages/PageNotFound.jsx';
 import { BookContext } from './Components/context/BookContext.jsx';
 import { UserData } from './Components/context/UserData.jsx';
+import LandingPage from './Components/LandingPage/LandingPage.jsx';
 
 const queryClient = new QueryClient({
   defaultOptions: { queries: { staleTime: 60 * 1000 } },
@@ -43,6 +44,7 @@ export default function App() {
               <Route path="forgotPassword" element={<ForgotPasswordPage />} />
               <Route path="resetPassword" element={<ResetPassword />} />
               <Route path="resetPassword/:id" element={<NewPasswordPage />} />
+              <Route path="LandingPage" element={<LandingPage />} />
               <Route path="*" element={<PageNotFound />} />
             </Routes>
           </Router>

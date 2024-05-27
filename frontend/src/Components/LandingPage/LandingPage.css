@@ -1,0 +1,135 @@
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html{
+   font-size:10px ; 
+  }
+  body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgba(230, 240, 230, 1);
+    ;
+  }
+    .nav{
+      background: rgba(255, 255, 255, 1);
+      height: 8rem;
+      font-size: 1.6rem;
+      
+  }
+  .logo{
+  margin-top: 1.4rem ;
+  float: left;
+  margin-left: 10rem;
+  
+  }
+  .menu{
+      height:7rem;
+      float: left;
+     
+  }
+  ul{
+  float : left;
+  justify-content: center;
+  align-items: center;
+  display:flex;
+  } 
+  
+  ul li{
+  list-style: none;
+  margin-left: 4rem;
+  margin-top: 3rem;
+  font-size: 2rem; 
+  }
+  
+  ul li a{
+  text-decoration: none;
+  color: rgba(0, 77, 0, 1);
+  ;
+  }
+  
+  .sidenav{
+  float: right;
+  margin-top: 2rem ;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  font-weight: 500;
+  }
+  .btn{
+    font-weight: 600;
+    color: rgba(0, 59, 0, 1);
+    background-color: rgba(255, 255, 255, 1);
+    border: none ;
+    /* margin-right: 2rem; */
+    font-size: 1.8rem;
+    padding: 1rem;
+  
+  }
+  .btn1{
+    color: white;
+    background-color:rgba(0, 77, 0, 1);
+    font-size: 1.8rem;
+    padding: 1rem;
+    border-radius: .4rem;
+    border: none;
+  }
+
+.header {
+  height: 75vh;
+
+}
+.desc{
+font :EB Garamond;
+font-weight:500;
+font-size:7.2rem; 
+line-height:7.9rem;
+width: 60.7rem;
+padding-top: 8rem;
+/* margin-right: 8rem; */
+ }
+.desc-para {
+  line-height: 3.2rem;
+  width: 46rem;
+  font-size: 2rem;
+  font-weight: 400;
+  color: rgba(88, 95, 106, 1);
+}
+ .createacc{
+  display: flex;
+  margin-top: 2rem;
+  gap: 2rem;
+ }
+
+ .why-choose{
+   padding: 2rem;
+   text-align: center;
+ }
+ .section1{
+  display: flex;
+  padding: 4rem;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+ }
+
+ .group4{
+  width: 53rem;
+ }
+ .main-desc{
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.3rem;
+  color: rgba(0, 108, 0, 1);
+ }
+ .sub-desc {
+  line-height: 4.8rem;
+  font-weight: 500;
+  font-size: 4rem;
+ }
+ .desc-sec1{
+width:54rem;
+Height:16rem;
+font-weight: 400;
+font-size:2rem;
+line-height:32px;
+ }
